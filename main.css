@@ -1,0 +1,27 @@
+body{
+	background-color: white;	
+}
+
+.sheet{
+	background-color: #98FB98;
+	
+}
+
+.section{
+	background-color: #bfffba;	
+	border-color: black;
+	border: 1px solid;
+	margin: 10px 10px 10px 10px
+}
+
+.section .header{
+	border-color: black;
+	border-bottom: 1px solid black;
+	
+	background-color:#10c75a;
+	color: white;
+	font-size:14px;
+	font-weight:bold;
+	padding-right: 15px;
+	padding-left: 15px;
+}
