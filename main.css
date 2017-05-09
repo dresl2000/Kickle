@@ -4,14 +4,15 @@ body{
 
 .sheet{
 	background-color: #98FB98;
-	
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .section{
 	background-color: #bfffba;	
 	border-color: black;
 	border: 1px solid;
-	margin: 10px 10px 10px 10px
+	margin: 10px 10px 10px 10px;
+	
 }
 
 .section .header{
