@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url("fonts/nyala.TTF") format("truetype");
+}
+
 body{
+	font-family: "My Custom Font";
 	background-color: white;	
+	font-size:18px;
 }
 
 .sheet{
@@ -15,14 +22,16 @@ body{
 	
 }
 
+
 .section .header{
 	border-color: black;
 	border-bottom: 1px solid black;
 	
 	background-color:#10c75a;
 	color: white;
-	font-size:14px;
-	font-weight:bold;
+	font-size:22px;
+	text-transform: uppercase;
+	
 	padding-right: 15px;
 	padding-left: 15px;
 }
