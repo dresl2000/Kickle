@@ -10,12 +10,12 @@ body{
 }
 
 .sheet{
-	background-color: #98FB98;
+	background-color: #dfe0df;
 	box-shadow: 10px 10px 5px #888888;
 }
 
 .section{
-	background-color: #bfffba;	
+	background-color: #f7fff6;	
 	border-color: black;
 	border: 1px solid;
 	margin: 10px 10px 10px 10px;
@@ -27,7 +27,7 @@ body{
 	border-color: black;
 	border-bottom: 1px solid black;
 	
-	background-color:#10c75a;
+	background-color:black;
 	color: white;
 	font-size:22px;
 	text-transform: uppercase;
