@@ -10,8 +10,12 @@ body{
 }
 
 h5{
-	font-size:18px;
+	font-size:18px;	
 	text-transform: uppercase;
+}
+
+.logo{    
+  	width: 100%;
 }
 
 .sheet{
@@ -23,8 +27,8 @@ h5{
 	background-color: #f7fff6;	
 	border-color: black;
 	border: 1px solid;
-	margin: 10px 10px 10px 10px;
-	
+	margin: 10px 10px 10px 10px;	
+	padding-bottom: 10px;
 }
 
 .section .header{
@@ -37,21 +41,27 @@ h5{
 	text-transform: uppercase;
 	
 	padding-right: 15px;
-	padding-left: 15px;
+	padding-left: 15px;	
 }
 
+.numberCircleHeader {
+	text-align: center;
+}	
+	
 
 .numberCircle {
     border-radius: 50%;
-
-    width: 36px;
-    height: 36px;
-    padding: 8px;
+	margin:auto;
+	
+    width: 45px;
+    height: 45px;
+    padding: 0px;
 
     background: #fff;
     border: 2px solid #666;
     color: #666;
     text-align: center;
 
-    font-size: 32px;
+    font-size: 26px;
+	
 }
