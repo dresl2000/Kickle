@@ -1,6 +1,8 @@
+@import "susy";
+ 
 @font-face {
     font-family: "My Custom Font";
-    src: url("fonts/nyala.TTF") format("truetype");
+    src: url("/assets/fonts/nyala.TTF") format("truetype");
 }
 
 body{
