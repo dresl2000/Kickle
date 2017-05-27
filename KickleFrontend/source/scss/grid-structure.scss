@@ -1,0 +1,41 @@
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 0.25, 
+  gutter-position: split,
+);
+
+.container {
+	@include container(1080px);		
+	@include susy-clearfix;
+	padding: gutter(12);
+}
+ 
+
+
+.s1{
+	@include span(1 of 12 );	
+	 @media (min-width: 768px) {
+    @include span(4 of 12);
+  }
+  @media (min-width: 980px) {
+    @include span(3 of 12);
+  }
+}  
+
+.cl{
+	clear: left;
+}
+
+.cr{
+	clear: right;
+}
+
+.s4{
+	@include span(4 of 12 border-box);	 	
+}  
+
+.s8{
+	@include span(8 of 12 border-box);		
+}  

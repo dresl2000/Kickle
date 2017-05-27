@@ -2,7 +2,7 @@
  
 @font-face {
     font-family: "My Custom Font";
-    src: url("/assets/fonts/nyala.TTF") format("truetype");
+    src: url("/fonts/nyala.TTF") format("truetype");
 }
 
 body{
@@ -10,7 +10,7 @@ body{
 	background-color: white;	
 	font-size:18px;
 }
-
+ 
 h5{
 	font-size:18px;	
 	text-transform: uppercase;
@@ -25,14 +25,12 @@ h5{
 	box-shadow: 10px 10px 5px #888888;
 }
 
+
 .section{
 	background-color: #f7fff6;	
-	border-color: black;
-	border: 1px solid;
-	margin: 10px 10px 10px 10px;	
-	padding-bottom: 10px;
+	border-color: black;	
+	border: 1px solid;	
 }
-
 
 
 .section .header{

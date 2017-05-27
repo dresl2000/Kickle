@@ -19,8 +19,9 @@ return gulp.src('source/scss/**/*.scss')
       .pipe(sass({
           outputStyle: 'compressed',
           includePaths: ['node_modules/susy/sass']
-      }).on('error', sass.logError))
-    .pipe(sourcemaps.write()) // Add the map to modified source.
+      }).on('error', sass.logError))	 
+	  .pipe(concat('main.css'))
+    .pipe(sourcemaps.write()) // Add the map to modified source.	
     .pipe(gulp.dest('public/css'));
 });
 
