@@ -1,5 +1,6 @@
 @import "susy";
 
+
 $susy: (
   columns: 12,
   gutters: 0.25, 
@@ -7,23 +8,11 @@ $susy: (
 );
 
 .container {
-	@include container(1080px);		
+	@include container(1280px);		
 	@include susy-clearfix;
 	padding: gutter(12);
 }
  
-
-
-.s1{
-	@include span(1 of 12 );	
-	 @media (min-width: 768px) {
-    @include span(4 of 12);
-  }
-  @media (min-width: 980px) {
-    @include span(3 of 12);
-  }
-}  
-
 .cl{
 	clear: left;
 }
@@ -31,11 +20,43 @@ $susy: (
 .cr{
 	clear: right;
 }
+ 
+$small: 480px;
+$medium: 768px; 
+$large: 1280px;
+
+.s4sb{
+	@include span(4 of 12 border-box);	 
+
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}	
+}
+ 
+.s8sb{
+	@include span(8 of 12 border-box);	
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}
+} 
 
 .s4{
-	@include span(4 of 12 border-box);	 	
+	@include span(4 of 12 border-box);	 
+	
+	@media screen and (max-width: $medium) {
+		@include span(6 of 12 border-box);	 	
+	}
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}	
 }  
 
+  
+
 .s8{
-	@include span(8 of 12 border-box);		
+	@include span(8 of 12 border-box);	
+	
+	@media screen and (max-width: $medium) {
+		@include span(12 of 12 border-box);	 	
+	}
 }  
