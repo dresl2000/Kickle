@@ -41,37 +41,18 @@ $large: 1280px;
 	@include span(4 of 12 border-box);	 	
 }  
 
-.s4sm12{
-	@include span(4 of 12 border-box);	 
+.s5{
+	@include span(5 of 12 border-box);	 	
+}  
 
-	@media screen and (max-width: $small) {
-		@include span(12 of 12 border-box);	 	
-	}	
-}
+.s6{
+	@include span(6 of 12 border-box);	 	
+}  
 
-.s4med12{
-	@include span(4 of 12 border-box);	 
-
-	@media screen and (max-width: $medium) {
-		@include span(12 of 12 border-box);	 	
-	}	
-}
+.s7{
+	@include span(7 of 12 border-box);	 	
+}  
  
-.s8sm12{
-	@include span(8 of 12 border-box);	
-	@media screen and (max-width: $small) {
-		@include span(12 of 12 border-box);	 	
-	}
-} 
-
-.s8med12{
-	@include span(8 of 12 border-box);	
-	@media screen and (max-width: $medium) {
-		@include span(12 of 12 border-box);	 	
-	}
-} 
-
-  
 .s2med2sm1{
 	@include span(2 of 12 border-box);	
 	@media screen and (max-width: $medium) {
@@ -82,6 +63,21 @@ $large: 1280px;
 	}	
 }  
 
+.s2sm3{
+	@include span(2 of 12 border-box);		
+	@media screen and (max-width: $small) {
+		@include span(3 of 12 border-box);	 	
+	}	
+} 
+
+.s3sm4{
+	@include span(3 of 12 border-box);	
+	@media screen and (max-width: $small) {
+		@include span(4 of 12 border-box);	 	
+	}	
+}  
+
+ 
 .s4med2sm4{
 	@include span(4 of 12 border-box);	
 	@media screen and (max-width: $medium) {
@@ -90,4 +86,57 @@ $large: 1280px;
 	@media screen and (max-width: $small) {
 		@include span(4 of 12 border-box);	 	
 	}	
+} 
+ 
+.s4med12{
+	@include span(4 of 12 border-box);	 
+
+	@media screen and (max-width: $medium) {
+		@include span(12 of 12 border-box);	 	
+	}	
+}
+
+.s4sm12{
+	@include span(4 of 12 border-box);	 
+
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}	
+}
+
+.s5sm12{
+	@include span(5 of 12 border-box);	 
+	
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}	
 }  
+ 
+ 
+.s7sm12{
+	@include span(7 of 12 border-box);	 
+	
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}	
+}  
+ 
+.s8med12{
+	@include span(8 of 12 border-box);	
+	@media screen and (max-width: $medium) {
+		@include span(12 of 12 border-box);	 	
+	}
+} 
+ 
+.s8sm12{
+	@include span(8 of 12 border-box);	
+	@media screen and (max-width: $small) {
+		@include span(12 of 12 border-box);	 	
+	}
+} 
+
+
+
+  
+
+ 
