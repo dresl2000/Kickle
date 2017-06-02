@@ -8,7 +8,7 @@ $susy: (
 );
 
 .container {
-	@include container(1280px);		
+	@include container(1080px);		
 	@include susy-clearfix;
 	padding: gutter(12);
 }
@@ -23,7 +23,7 @@ $susy: (
  
 $small: 580px;
 $medium: 980px; 
-$large: 1280px;
+$large: 1080px;
 
 .s1{
 	@include span(1 of 12 border-box);	
