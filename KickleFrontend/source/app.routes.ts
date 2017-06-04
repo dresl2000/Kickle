@@ -4,11 +4,10 @@ kickleApp.config(function($routeProvider){
 	.when('/',{
 	templateUrl : 'components/characterOverview/characterOverview.html',
 	 controller  : 'characterOverviewController',
-	})
-	.when('/stepsOverview',{
+	}) 
+	.when('/steps',{
 	 templateUrl : 'components/stepsOverview/stepsOverview.html',
-	 controller  : 'stepsOverviewController',
-	 content: 'zelda' 
+	 controller  : 'stepsOverviewController'
 	})	
 	.otherwise({redirectTo: '/'});
 		
