@@ -1,0 +1,1 @@
+var kickleApp = angular.module('kickleApp', ['ngRoute']);
