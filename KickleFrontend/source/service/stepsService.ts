@@ -98,6 +98,10 @@ kickleApp.service('stepsService', ['$log', function($log: any){
 		return steps[step-1].roll();
 	};
 	
+	this.getAllSteps = function(){
+		return steps;
+	}
+	
 	function init() {
 		$log.log('initializing stepsService');
 		

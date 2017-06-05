@@ -1,6 +1,6 @@
 (function(){
 
-kickleApp.controller('stepsOverviewController',['$log','stepsService', function($log: any, stepsService: any){
+kickleApp.controller('stepsOverviewController',['$log','$scope','stepsService', function($log: any,$scope: any, stepsService: any){
 
 
 	function init() {
@@ -11,7 +11,11 @@ kickleApp.controller('stepsOverviewController',['$log','stepsService', function(
 		
 	};
 	
-
+	$scope.getSteps = function() {
+		return stepsService.getAllSteps();   
+	}
+	
+	
 	init();	
 		
 }]);
