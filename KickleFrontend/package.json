@@ -11,6 +11,9 @@
     "susy": "^2.2.12"
   },
   "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
     "concat": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -20,6 +23,11 @@
     "gulp-typescript": "^3.1.6",
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
+    "jasmine-core": "^2.6.3",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
     "noop": "^0.2.2",
     "typescript": "^2.2.2",
     "uglify": "^0.1.5"
