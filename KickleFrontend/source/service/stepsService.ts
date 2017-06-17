@@ -68,7 +68,7 @@ kickleApp.service('stepsService', ['$log', function($log: any){
 		};
 		
 		toString() : String{
-			return (this.amount > 1 ? this.amount : '') + 'w' + this.type + (this.modifier != 0 ? ' ' + this.modifier : '');
+			return (this.amount > 1 ? this.amount : '') + 'w' + this.type + (this.modifier != 0 ?  this.modifier : '');
 		};
 		
 		roll(): number{

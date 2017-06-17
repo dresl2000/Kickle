@@ -1,17 +1,18 @@
 {
   "name": "kickle_frontend",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Earth Dawn Character Sheet",
   "author": "dresl2000",
   "license": "ISC",
-  "main": "app.module.js",
+  "main": "app.module.ts",
   "dependencies": {
+	"angular": "^1.6.4",
+    "angular-route": "^1.6.4",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "susy": "^2.2.12"
   },
-  "devDependencies": {
-    "angular": "^1.6.4",
+  "devDependencies": {    
     "angular-mocks": "^1.6.4",
     "angular-ui-router": "^1.0.3",
     "concat": "^3.0.0",
