@@ -49,6 +49,12 @@ gulp.task('compile-ts', function () {
         .pipe(gulp.dest('public/javascript'));
 });
 
+gulp.task('copyJavaScriptLibs', function() {  
+  gulp.src(	['node_modules/angular/angular.min.js',
+			'node_modules/angular-route/angular-route.min.js']
+			).pipe(gulp.dest('public/javascript'));
+});
+
 gulp.task('watch', function() {
   gulp.watch('source/**/*.ts', ['compile-ts']);
   gulp.watch('source/scss/**/*.scss', ['build-css']);
@@ -60,6 +66,7 @@ gulp.task('build', function() {
   gulp.start('copyHtml');
   gulp.start('copyFonts');
   gulp.start('copyImages');
+  gulp.start('copyJavaScriptLibs');
   gulp.start('compile-ts');
 });
 
