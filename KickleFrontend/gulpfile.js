@@ -14,7 +14,7 @@ gulp.task('default', ['watch']);
 
 
 gulp.task('build-css', function() {
-return gulp.src('source/scss/**/*.scss')
+return gulp.src('source/**/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
       .pipe(sass({
           outputStyle: 'compressed',
@@ -57,7 +57,7 @@ gulp.task('copyJavaScriptLibs', function() {
 
 gulp.task('watch', function() {
   gulp.watch('source/**/*.ts', ['compile-ts']);
-  gulp.watch('source/scss/**/*.scss', ['build-css']);
+  gulp.watch('source/**/*.scss', ['build-css']);
   gulp.watch('source/**/*.html', ['copyHtml']);
 });
 

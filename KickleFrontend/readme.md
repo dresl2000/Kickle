@@ -21,3 +21,8 @@ start selenium web-dirver:
 .\webdriver-manager start
 then run protractor:
 .\protractor test/conf.js
+
+
+@ECHO OFF
+set PATH=%PATH%;%CD%
+"node_modules\.bin\ncu" %*
