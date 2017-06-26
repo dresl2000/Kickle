@@ -19,9 +19,8 @@ module.exports = function(config) {
 		'./node_modules/angular-ui-router/release/angular-ui-router.js', 
 		'./node_modules/angular-route/angular-route.js', 
 		'./node_modules/angular-mocks/angular-mocks.js',	
-		'./public/javascript/bundle.js',
-		'./source/components/stepsOverview/stepsOverview.spec.js',		
-		'./source/service/stepsService.spec.js'		
+		'./public/javascript/bundle.js',		
+		'./source/**/*.spec.js'		
     ],
 
 
