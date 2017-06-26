@@ -1,0 +1,3 @@
+describe('attributesService Tests', function() {
+	
+});
