@@ -11,10 +11,9 @@ describe('StepsService Tests', function() {
 	}));	
 	
 	it('should have stepsService be defined', function () {
-		console.log(stepsService.rollStep(2));
 		expect(stepsService).toBeDefined();
 	});	
-
+ 
 	it('should have 100 steps', function () {
 		var allSteps = stepsService.getAllSteps();
 		expect(allSteps.length).toBe(100);

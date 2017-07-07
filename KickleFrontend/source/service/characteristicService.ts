@@ -22,7 +22,7 @@ kickleApp.service('characteristicService', ['$log', function($log: any){
 	};
 	
 	function init() {
-		$log.log('initializing attributesService');
+		$log.log('initializing characteristicService');
 		
 		characteristicsTable = new Array() as Array<Characteristic>;
 		
