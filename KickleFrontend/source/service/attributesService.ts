@@ -1,47 +1,44 @@
 
 
-kickleApp.service('attributesService', ['$log', function($log: any){
+kickleApp.service('attributesService', ['$log','characteristicService','characterDataService', function($log: any,characteristicService: any,characterDataService: any){
 	
 	let attributes : Attribute[];
 				
-
 		
 	class Attribute {
 		
-		public Type: string;
+		public Type: string;	
 		public Value : number;
 		public Increased: number;
 		public Step : number;
+		
+		constructor(raw: any){		
+		
+			this.Type = raw.Type;
+			this.Increased = raw.Increased;
+			this.Value = raw.Value;
+		
+			this.Step = characteristicService.getCharacteristics(this.Value).Step;
+		};
+		
 	}
-	
-	this.getAttribute = function(type: string): Attribute{
+	 
+	this.getAttribute = function(type: string): Attribute{					
 		return attributes.find(x => x.Type == type);
 	};	
+		
 	  
 	function init() {
 		$log.log('initializing attributesService');
 		
-		attributes = new Array() as Array<Attribute>;
+		attributes = new Array() as Array<Attribute>;			
 		
-		for (let raw of rawData) {
-			attributes.push(Object.assign( new Attribute(),raw));
+		for (let raw of characterDataService.getCharacterData().Characters[0].Attributes) {
+			attributes.push(new Attribute(raw));
 		}
 		
 	};	
-	 
-	let rawData = [
-		{
-			"Type":"DEX",
-			"Value": 11,
-			"Increased": 0
-		},
-		{
-			"Type":"STR",
-			"Value": 1,
-			"Increased": 0
-		}	
-	];
-		
+	 		
 	init();
 }]);
 
