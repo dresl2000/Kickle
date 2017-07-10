@@ -5,20 +5,36 @@ kickleApp.component('attributes', {
     items: '='
   },
   templateUrl: 'components/attributes/attributes.html',
-  controller: ['$scope', '$log', attributesController]
+  controller: ['$log','attributesService', attributesController]
 });
 
 
-function attributesController($log: any,$scope: any) {
+function attributesController($log: any,attributesService: any) {
 	
-		function init() {
+	vm = this;
+	
+
+	function init() {
 		$log.log('initializing attributesController');
-		 
+		vm.myName = 'gg';	 
 		
 	};
 	
+	vm.getValue = function(type: String) {
+		return attributesService.getAttribute(type).Value;		
+	};
 
+	vm.getIncreased = function(type: String) {
+		return attributesService.getAttribute(type).Increased;		
+	};
 	
+	vm.getStep = function(type: String) {
+		return attributesService.getAttribute(type).Step;		
+	};	
+	
+	vm.getDice = function(type: String) {
+		return attributesService.getAttribute(type).Step;		
+	};	
 	
 	init();	
 }
