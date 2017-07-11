@@ -1,25 +1,25 @@
 (function(){
 
-kickleApp.component('attributes', {
+kickleApp.component('attributeList', {
   bindings: {
     items: '='
   },
-  templateUrl: 'components/attributes/attributes.html',
-  controller: ['$log','attributesService', attributesController]
+  templateUrl: 'components/attribute-list/attribute-list.html',
+  controller: ['$log','attributesService', attributeListController]
 });
 
-
-function attributesController($log: any,attributesService: any) {
+ 
+function attributeListController($log: any,attributesService: any) {
 	
 	vm = this;
 	
 
 	function init() {
-		$log.log('initializing attributesController');
+		$log.log('initializing attribute-listController');
 		vm.myName = 'gg';	 
 		
 	};
-	
+	 
 	vm.getValue = function(type: String) {
 		return attributesService.getAttribute(type).Value;		
 	};
