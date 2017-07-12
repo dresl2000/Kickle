@@ -5,40 +5,41 @@ kickleApp.component('attribute', {
       from: '<',
       msg: '<'
     },
-    controller: ['$log','attributesService', attributeController],
+    controller: ['$log','attributesService','stepsService', attributeController],
 	bindings: {
 			name: '@',
 			type: '@'
             },	
     template: [
 		'<span class="cl s4med2sm4">{{$ctrl.name}}</span>',
-		'<span class="s1">&nbsp;</span>',
-		'<span class="s2med2sm1">11</span>',
-		'<span class="s2med2sm1">5</span>',
-		'<span class="s3">w8</span>'
+		'<span class="s1">&nbsp;{{$ctrl.getIncreased($ctrl.type)}}</span>',
+		'<span class="s2med2sm1">{{$ctrl.getValue($ctrl.type)}}</span>',
+		'<span class="s2med2sm1">{{$ctrl.getStep($ctrl.type)}}</span>',
+		'<span class="s3">{{$ctrl.getDice($ctrl.type)}}</span>'
     ].join('')
   });
 
 
-	function attributeController($log: any,attributesService: any, name, type) {
+	function attributeController($log: any,attributesService: any,stepsService: any) {
 		
 		let vm = this;
-		
-
-		
-		
-		function init() {
-			$log.log('initializing attributeController for:' + vm.name);
-			vm.myName = 'gg';	 
-			
-		};
 		
 		vm.getValue = function(type: String) {
 			return attributesService.getAttribute(type).Value;		
 		};
 
 		vm.getIncreased = function(type: String) {
-			return attributesService.getAttribute(type).Increased;		
+			let incr = attributesService.getAttribute(type).Increased;		
+			$log.log(incr);
+			let returnValue = '';
+			
+			for(let i = 0; i < incr;i++)
+			{
+				returnValue += 'I';
+			}
+			$log.log(returnValue);
+			return returnValue;
+			
 		};
 		
 		vm.getStep = function(type: String) {
@@ -46,10 +47,10 @@ kickleApp.component('attribute', {
 		};	
 		
 		vm.getDice = function(type: String) {
-			return attributesService.getAttribute(type).Step;		
+			let step = attributesService.getAttribute(type).Step;		
+			return stepsService.getDice(step);
 		};	
 		
-		init();	
 	}
 
  
