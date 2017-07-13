@@ -5,17 +5,21 @@ kickleApp.service('characterDataService', ['$log', function($log: any){
 	this.getCharacterData = function(){					
 		return characterData;
 	};	
-		
+		 
 	  	
 	let characterData = {
-		Player: {					
-			Name: 'Dresl',
-			Id : 1
+		Player: {			
+			Id : 1,
+			Name: 'Dresl'
 		},
 		Characters: [ 
 		{
-			Name: 'Kickle Cubible',
 			Id: 1,
+			Name: 'Kickle Cubicle',
+			Discipline: { Id:0, Name:'Illustionist', Circle: 3},
+			Race: {Id: 0, Name: 'Windling'},
+			Sex: {Id: 1, Name: 'männlich'},
+			Age: 36,
 			Attributes: [
 				{
 					"Type":"DEX",

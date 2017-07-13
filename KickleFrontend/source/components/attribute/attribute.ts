@@ -30,16 +30,15 @@ kickleApp.component('attribute', {
 
 		vm.getIncreased = function(type: String) {
 			let incr = attributesService.getAttribute(type).Increased;		
-			$log.log(incr);
+			
 			let returnValue = '';
 			
 			for(let i = 0; i < incr;i++)
 			{
 				returnValue += 'I';
 			}
-			$log.log(returnValue);
-			return returnValue;
 			
+			return returnValue;			
 		};
 		
 		vm.getStep = function(type: String) {
