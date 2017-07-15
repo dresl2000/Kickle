@@ -38,8 +38,8 @@ kickleApp.service('characterDataService', ['$log', function($log: any){
 				},
 				{
 					"Type":"PER",
-					"Value": 21,
-					"Increased": 2
+					"Value": 22,
+					"Increased": 3
 				},
 				{
 					"Type":"WIL",
