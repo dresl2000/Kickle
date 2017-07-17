@@ -17,19 +17,16 @@
 	<div class="s8med12 section">
 		<div class="header">Abentuer Tagebuch</div>										
 
-			
-			<h5 class="">Reise in die Zukunft (16.3.2017)</h5>
-			<span>Legendenpunkte: 1.600</span><br/>
-			<span>
-			
-			</span>
-			<br/>
-			
-			
-			<span>Die Bauernrevolte beenden (13.4.2017)[2.000 LP]</span><br/>
-			<span>Diplomatisches Gemetzel an der Wassersäule (16.5.2017)[2.300 LP]</span><br/>
-			<span>Wieder nicht ins Archiv geschafft (5.6.2017)[2.500 LP]</span>
-			<span>Aslani muss brennen! (13.07.2017)[2.800 LP]</span>
+			<div ng-repeat="logEntry in getAdventureLog()">
+				<h5 class="">{{logEntry.Title}} ({{logEntry.Date}})</h5>
+				<span>Legendenpunkte: {{logEntry.LegendPoints}}</span><br/>
+				<span ng-repeat="txt in logEntry.Text">
+					{{txt}}<br/>
+				</span>
+				<br/>
+			</div>
+					
+	
 		
 	</div>	 
 	
