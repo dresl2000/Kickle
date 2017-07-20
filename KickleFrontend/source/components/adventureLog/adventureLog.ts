@@ -2,10 +2,13 @@
 
 kickleApp.controller('adventureLogController', [ '$log','$scope','characterDataService', function($log: any,$scope: any,characterDataService: any){
 
-	$scope.getAdventureLog = function() {
-		$log.log('ggeting logs');
+	$scope.getAdventureLog = function() {		
 		return characterDataService.getAdventureLog();   
 	}
+	
+	$scope.getNotes = function() {		
+		return characterDataService.getNotes();   
+	}	
   
 }]);
 })();

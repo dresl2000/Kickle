@@ -3,6 +3,7 @@ var express = require('express');
 
 var server = express();
 server.use(express.static(__dirname + '/KickleFrontend/public'));
+//server.use(express.static(__dirname + '/KickleFrontend/production'));
 
 
 
