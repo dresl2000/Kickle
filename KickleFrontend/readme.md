@@ -47,5 +47,6 @@ Preperations:
 + consider using RxJs 
 	angular uses observables exensively
 + write new components in typescript
-+ don't learn Angular2 while migrating. create simple web app before that.
++ don't learn Angular2 while migrating. create simple web app before that
++ start with services
 
