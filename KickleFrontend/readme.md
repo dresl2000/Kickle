@@ -1,14 +1,14 @@
-#Kickle Cubicle
+# Kickle Cubicle
 
-##Help Docs Overview
+## Help Docs Overview
 
-###Structure
+### Structure
 https://scotch.io/tutorials/angularjs-best-practices-directory-structure
 
-###Gulp
+### Gulp
 https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js
 
-###Testing
+### Testing
 https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 http://jbavari.github.io/blog/2014/06/11/unit-testing-angularjs-services/
 
@@ -28,7 +28,7 @@ set PATH=%PATH%;%CD%
 "node_modules\.bin\ncu" %*
 
 
-###Upgrading to Angular2:
+## Upgrading to Angular2:
 https://medium.com/@gsari/upgrade-from-angularjs-to-angular-2-15f3179b7849
 
 https://www.youtube.com/watch?v=ucUy0CoN57Q
@@ -52,7 +52,7 @@ Preperations:
 
 1. port services and downgrade them. start with services with few dependencies
 2. port components and downgrade them
-
+3. deprecate angular 1: use angular 4 root component, bootstrap angular 2 and its injector, eliminate angular 1.x registrations
 
 
 
