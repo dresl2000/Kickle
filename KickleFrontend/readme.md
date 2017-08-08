@@ -40,6 +40,8 @@ recommended by google
 
 Preperations:
 * use componets
+* remove $watch
+* isolate scope
 * adopt a feature based directory structure
 * use service instead of factory
 * unidirectional data flow
