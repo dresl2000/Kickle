@@ -39,14 +39,20 @@ both runtimes (angular 1 and 2) are in the application
 recommended by google
 
 Preperations:
-+ use componets
-+ adopt a feature based directory structure
-+ use service instead of factory
-+ unidirectional data flow
+* use componets
+* adopt a feature based directory structure
+* use service instead of factory
+* unidirectional data flow
 	switch to flux/ redux
-+ consider using RxJs 
+* consider using RxJs 
 	angular uses observables exensively
-+ write new components in typescript
-+ don't learn Angular2 while migrating. create simple web app before that
-+ start with services
+* write new components in typescript
+* **don't learn Angular2 while migrating. create simple web app before that**
+* avoid $compile, replace, priority
+
+1. port services and downgrade them. start with services with few dependencies
+2. port components and downgrade them
+
+
+
 
