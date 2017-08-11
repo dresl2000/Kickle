@@ -12,16 +12,18 @@ https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js
 https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 http://jbavari.github.io/blog/2014/06/11/unit-testing-angularjs-services/
 
-unit tests:
+##unit tests:
 karma start
 
 
-e2e testing:
+##e2e testing:
 start selenium web-dirver:
 .\webdriver-manager start
 then run protractor:
 .\protractor test/conf.js
 
+If webdriver doesn't start up, try:
+node .\node_modules\protractor\bin\webdriver-manager update
 
 @ECHO OFF
 set PATH=%PATH%;%CD%
@@ -31,15 +33,22 @@ set PATH=%PATH%;%CD%
 ## Upgrading to Angular2:
 https://medium.com/@gsari/upgrade-from-angularjs-to-angular-2-15f3179b7849
 
+http://www.alainchautard.com/how-to-migrate-from-angular-1-to-angular-2/
+
 https://www.youtube.com/watch?v=ucUy0CoN57Q
+
+https://angular.io/guide/upgrade
+
+https://blog.thoughtram.io/angular/2015/10/24/upgrading-apps-to-angular-2-using-ngupgrade.html
+
 
 ngUpgrade:
 
 both runtimes (angular 1 and 2) are in the application 
 recommended by google
 
-Preperations:
-* use componets
+Preperation Phase:
+* use components
 * remove $watch
 * isolate scope
 * adopt a feature based directory structure
@@ -52,6 +61,20 @@ Preperations:
 * **don't learn Angular2 while migrating. create simple web app before that**
 * avoid $compile, replace, priority
 
+Change Structure to:
+app
+|- components
+  |- productDetail
+  | |- productDetail.js
+  | |- productDetail.css
+  | |- productDetail.html
+  | |- productDetail.spec.js
+  |- productList
+  |- checkout
+  |- wishlist
+
+
+Upgrade Phase:
 1. port services and downgrade them. start with services with few dependencies
 2. port components and downgrade them
 3. deprecate angular 1: use angular 4 root component, bootstrap angular 2 and its injector, eliminate angular 1.x registrations

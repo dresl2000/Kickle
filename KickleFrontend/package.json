@@ -6,11 +6,25 @@
   "license": "ISC",
   "main": "app.module.ts",
   "dependencies": {
+    "@angular/animations": "^4.3.3",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/compiler-cli": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/platform-server": "^4.3.3",
+    "@angular/router": "^4.3.3",
+    "@angular/upgrade": "^4.3.3",
     "angular": "^1.6.4",
     "angular-route": "^1.6.4",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
-    "susy": "^2.2.12"
+    "rxjs": "^5.4.3",
+    "susy": "^2.2.12",
+    "zone.js": "^0.8.16"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.4",
