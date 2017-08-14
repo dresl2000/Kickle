@@ -50,6 +50,7 @@ recommended by google
 Preperation Phase:
 * use components
 * remove $watch
+* you do not need to call $apply(), regardless of whether it is in AngularJS on Angular. The UpgradeModule does it for us. You can still call $apply() so there is no need to remove such calls from existing code. Those calls just trigger additional AngularJS change detection checks in a hybrid application.
 * isolate scope
 * adopt a feature based directory structure
 * use service instead of factory
