@@ -1,6 +1,6 @@
+module.exports = function(kickleApp) {
 
-
-kickleApp.service('attributesService', ['$log','characteristicService','characterDataService', function($log: any,characteristicService: any,characterDataService: any){
+kickleApp.service('attributesService', ['$log','characteristicService','characterDataService', function($log: any, characteristicService, characterDataService){
 	
 	let attributes : Attribute[];
 				
@@ -43,3 +43,4 @@ kickleApp.service('attributesService', ['$log','characteristicService','characte
 }]);
 
  
+}

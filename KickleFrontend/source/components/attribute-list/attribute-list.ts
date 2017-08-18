@@ -1,4 +1,4 @@
-(function(){
+module.exports = function(kickleApp) {
 
 kickleApp.component('attributeList', {
   bindings: {
@@ -9,10 +9,10 @@ kickleApp.component('attributeList', {
 });
 
  
-function attributeListController($log: any) {
+function attributeListController($log) {
 	
 
 }
 
  
-})();
+}

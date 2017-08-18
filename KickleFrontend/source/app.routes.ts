@@ -1,3 +1,5 @@
+var kickleApp = require("./app.module.ts");
+
 kickleApp.config(function($routeProvider){
 	
 	$routeProvider

@@ -1,6 +1,6 @@
-(function(){
-
-kickleApp.controller('stepsOverviewController',['$log','$scope','stepsService', function($log: any,$scope: any, stepsService: any){
+module.exports = function(kickleApp) {
+	
+kickleApp.controller('stepsOverviewController',['$log','$scope','stepsService', function($log,$scope, stepsService){
 
 
 	function init() {
@@ -19,4 +19,5 @@ kickleApp.controller('stepsOverviewController',['$log','$scope','stepsService', 
 	init();	
 		
 }]);
-})();
+
+}

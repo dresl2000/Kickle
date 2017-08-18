@@ -1,6 +1,6 @@
+module.exports = function(kickleApp) {
 
-
-kickleApp.service('characteristicService', ['$log', function($log: any){
+kickleApp.service('characteristicService', ['$log', function($log){
 	
 	
 	let characteristicsTable : Characteristic[];
@@ -17,7 +17,7 @@ kickleApp.service('characteristicService', ['$log', function($log: any){
 		return characteristicsTable;
 	}
 	
-	this.getCharacteristics = function(value: number): String{
+	this.getCharacteristics = function(value: number){
 		return characteristicsTable.find(x => x.AttributeValue === value);
 	};
 	
@@ -190,4 +190,5 @@ kickleApp.service('characteristicService', ['$log', function($log: any){
 	init();	
 }]);
 
+}
  

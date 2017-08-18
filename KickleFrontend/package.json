@@ -5,6 +5,9 @@
   "author": "dresl2000",
   "license": "ISC",
   "main": "app.module.ts",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "@angular/animations": "^4.3.3",
     "@angular/common": "^4.3.3",
@@ -18,12 +21,16 @@
     "@angular/platform-server": "^4.3.3",
     "@angular/router": "^4.3.3",
     "@angular/upgrade": "^4.3.3",
+    "@types/angular": "^1.6.29",
+    "@types/node": "^8.0.24",
     "angular": "^1.6.4",
     "angular-route": "^1.6.4",
+    "awesome-typescript-loader": "^3.2.3",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "rxjs": "^5.4.3",
     "susy": "^2.2.12",
+    "webpack": "^3.5.5",
     "zone.js": "^0.8.16"
   },
   "devDependencies": {

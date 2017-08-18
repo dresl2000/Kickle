@@ -1,8 +1,9 @@
-(function(){
+module.exports = function(kickleApp) {
 
-kickleApp.controller('characterOverviewController', [ '$log','$scope', function($log: any,$scope: any){
+kickleApp.controller('characterOverviewController',  function($log,$scope){
 
 	
  
-}]);
-})();
+});
+
+}

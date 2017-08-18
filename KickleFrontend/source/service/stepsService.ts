@@ -1,6 +1,6 @@
+module.exports = function(kickleApp) {
 
-
-kickleApp.service('stepsService', ['$log', function($log: any){
+kickleApp.service('stepsService', ['$log', function($log){
 	
 	let steps : Step[];
 	
@@ -117,4 +117,4 @@ kickleApp.service('stepsService', ['$log', function($log: any){
 	init();	
 }]);
 
- 
+}

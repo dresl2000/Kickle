@@ -1,12 +1,10 @@
-(function(){
+module.exports = function(kickleApp) {
 
 kickleApp.component('attribute', {
-    bindings: {
-      from: '<',
-      msg: '<'
-    },
     controller: ['$log','attributesService','stepsService', attributeController],
 	bindings: {
+			from: '<',
+			msg: '<', 		
 			name: '@',
 			type: '@'
             },	
@@ -20,7 +18,7 @@ kickleApp.component('attribute', {
   });
 
 
-	function attributeController($log: any,attributesService: any,stepsService: any) {
+	function attributeController($log,attributesService,stepsService) {
 		
 		let vm = this;
 		
@@ -53,4 +51,4 @@ kickleApp.component('attribute', {
 	}
 
  
-})();
+}

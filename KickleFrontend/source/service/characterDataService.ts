@@ -1,5 +1,6 @@
+module.exports = function(kickleApp) {
 
-kickleApp.service('characterDataService', ['$log', function($log: any){
+kickleApp.service('characterDataService', ['$log', function($log){
 	
 	 
 	this.getCharacterData = function(){					
@@ -152,5 +153,6 @@ kickleApp.service('characterDataService', ['$log', function($log: any){
 
 }]);
 
+}
 			
 

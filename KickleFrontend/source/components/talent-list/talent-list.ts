@@ -1,5 +1,5 @@
-(function(){
-
+module.exports = function(kickleApp) {
+	
 kickleApp.component('talentList', {
   bindings: {
     items: '='
@@ -9,10 +9,10 @@ kickleApp.component('talentList', {
 });
 
  
-function attributeListController($log: any) {
+function attributeListController($log) {
 	
 
 }
 
  
-})();
+}

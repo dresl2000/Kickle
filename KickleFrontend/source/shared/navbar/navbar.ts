@@ -1,3 +1,5 @@
+module.exports = function(kickleApp) {
+
 kickleApp.directive('navbar',  function(){
 	return{		
 		restrict: 'E',
@@ -22,4 +24,4 @@ kickleApp.directive('navbar',  function(){
 	};
 }); 
 	
-	
+}	

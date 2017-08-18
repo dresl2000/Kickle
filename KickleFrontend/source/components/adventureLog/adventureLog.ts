@@ -1,6 +1,6 @@
-(function(){
+module.exports = function(kickleApp) {
 
-kickleApp.controller('adventureLogController', [ '$log','$scope','characterDataService', function($log: any,$scope: any,characterDataService: any){
+kickleApp.controller('adventureLogController', [ '$log','$scope','characterDataService', function($log,$scope,characterDataService){
 
 	$scope.getAdventureLog = function() {		
 		return characterDataService.getAdventureLog();   
@@ -11,4 +11,5 @@ kickleApp.controller('adventureLogController', [ '$log','$scope','characterDataS
 	}	
   
 }]);
-})();
+
+}

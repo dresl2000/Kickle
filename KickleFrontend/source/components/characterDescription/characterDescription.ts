@@ -1,5 +1,5 @@
-(function(){
-
+module.exports = function(kickleApp) {
+	
 kickleApp.component('characterDescription', {
   bindings: {
     items: '='
@@ -9,7 +9,7 @@ kickleApp.component('characterDescription', {
 });
 
  
-function characterDescriptionController($log: any,characterDataService: any) {
+function characterDescriptionController($log,characterDataService) {
 	
 	let vm = this;
 	
@@ -33,4 +33,4 @@ function characterDescriptionController($log: any,characterDataService: any) {
 }
 
  
-})();
+}
