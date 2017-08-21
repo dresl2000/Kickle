@@ -17,10 +17,10 @@ kickleApp.service('stepsService', ['$log', function($log){
 			
 			for (let diceString of inputArray) {			
 				let splitStr = diceString.split('w');
-				let diceNumber = splitStr[0].length > 0 ? splitStr[0] : 1
+				let diceNumber :number = splitStr[0].length > 0 ? Number(splitStr[0]) : 1
 				
-				let dieType = splitStr[1].split('-')[0];
-				let modifier = splitStr[1].split('-').length == 1 ? 0 : - splitStr[1].split('-')[1];
+				let dieType : number = Number(splitStr[1].split('-')[0]);
+				let modifier :number = splitStr[1].split('-').length == 1 ? 0 : - splitStr[1].split('-')[1];
 				
 				this.dice.push(new Die(diceNumber,dieType, modifier));
 			}
