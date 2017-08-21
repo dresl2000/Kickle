@@ -1,18 +1,27 @@
 import * as angular from 'angular';
 import 'angular-route';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { downgradeComponent } from '@angular/upgrade/static';
 
 import { KickleModule } from './kickle.module';
+
 
 var kickleApp = angular.module('kickleApp', ['ngRoute']);
 
 
 angular.element(document).ready(function() { 
 	platformBrowserDynamic().bootstrapModule(KickleModule);	
-	//angular.bootstrap(document.body, ['kickleApp']);
 });	
 
 
+//downgrades
+import { TalentListComponent } from './components/talent-list/talent-list.component';
+
+kickleApp.directive(
+    'talentList',
+    downgradeComponent({ component: TalentListComponent }) as angular.IDirectiveFactory
+);  
+  
 
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
 require("./components/attribute/attribute.ts")(kickleApp);
@@ -21,7 +30,6 @@ require("./components/characterOverview/characterOverview.ts")(kickleApp);
 require("./components/characterDescription/characterDescription.ts")(kickleApp);
 require("./components/spells/spells.ts")(kickleApp);
 require("./components/stepsOverview/stepsOverview.ts")(kickleApp);
-require("./components/talent-list/talent-list.ts")(kickleApp);
 
 
 require("./shared/navbar/navbar.ts")(kickleApp);
