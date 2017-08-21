@@ -1,8 +1,10 @@
-import { angular } from 'angular';
+import * as angular from 'angular';
+import 'angular-route';
 
 var kickleApp = angular.module('kickleApp', ['ngRoute']);
 
-angular.element(function() {
+angular.element(document).ready(function() { 
+	
 	angular.bootstrap(document.body, ['kickleApp']);
 });	
 

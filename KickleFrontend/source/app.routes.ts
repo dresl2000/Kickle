@@ -1,3 +1,4 @@
+/*
 var kickleApp = require("./app.module.ts");
 
 kickleApp.config(function($routeProvider){
@@ -22,3 +23,4 @@ kickleApp.config(function($routeProvider){
 	.otherwise({redirectTo: '/'});
 		
 });	
+*/
