@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UpgradeModule } from '@angular/upgrade/static';
 
 import { TalentListComponent } from './components/talent-list/talent-list.component';
+import { SpellsComponent } from './components/spells/spells.component';
 
 @NgModule({
   imports: [
@@ -10,10 +11,10 @@ import { TalentListComponent } from './components/talent-list/talent-list.compon
     UpgradeModule
   ],
   declarations: [
-    TalentListComponent
+    TalentListComponent,SpellsComponent
   ],
   entryComponents: [
-    TalentListComponent
+    TalentListComponent,SpellsComponent
   ]
 })
 

@@ -21,14 +21,20 @@ kickleApp.directive(
     'talentList',
     downgradeComponent({ component: TalentListComponent }) as angular.IDirectiveFactory
 );  
-  
+
+import { SpellsComponent } from './components/spells/spells.component';
+
+kickleApp.directive(
+    'spells',
+    downgradeComponent({ component: SpellsComponent }) as angular.IDirectiveFactory
+);
+
 
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
 require("./components/attribute/attribute.ts")(kickleApp);
 require("./components/attribute-list/attribute-list.ts")(kickleApp);
 require("./components/characterOverview/characterOverview.ts")(kickleApp);
 require("./components/characterDescription/characterDescription.ts")(kickleApp);
-require("./components/spells/spells.ts")(kickleApp);
 require("./components/stepsOverview/stepsOverview.ts")(kickleApp);
 
 
