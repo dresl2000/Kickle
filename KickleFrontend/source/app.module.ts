@@ -1,11 +1,15 @@
 import * as angular from 'angular';
 import 'angular-route';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { KickleModule } from './kickle.module';
 
 var kickleApp = angular.module('kickleApp', ['ngRoute']);
 
+
 angular.element(document).ready(function() { 
-	
-	angular.bootstrap(document.body, ['kickleApp']);
+	platformBrowserDynamic().bootstrapModule(KickleModule);	
+	//angular.bootstrap(document.body, ['kickleApp']);
 });	
 
 
