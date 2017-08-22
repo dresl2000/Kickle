@@ -36,7 +36,6 @@ import {CharacterDataService} from './service/character-data.service';
 
 kickleApp
   .factory('characterDataService', downgradeInjectable(CharacterDataService));
-  //.component('heroDetail', heroDetailComponent);
 
 
 
