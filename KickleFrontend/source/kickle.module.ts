@@ -4,6 +4,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 
 import { TalentListComponent } from './components/talent-list/talent-list.component';
 import { SpellsComponent } from './components/spells/spells.component';
+import { NavbarDirective } from './components/navbar/navbar.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { SpellsComponent } from './components/spells/spells.component';
     UpgradeModule
   ],
   declarations: [
-    TalentListComponent,SpellsComponent
+    TalentListComponent,SpellsComponent,NavbarDirective
   ],
   entryComponents: [
     TalentListComponent,SpellsComponent

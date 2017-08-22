@@ -80,5 +80,5 @@ Upgrade Phase:
 2. port components and downgrade them
 3. deprecate angular 1: use angular 4 root component, bootstrap angular 2 and its injector, eliminate angular 1.x registrations
 
-
+You can only upgrade AngularJS component directives to Angular.
 

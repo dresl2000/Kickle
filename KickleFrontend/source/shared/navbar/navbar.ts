@@ -3,6 +3,8 @@ module.exports = function(kickleApp) {
 kickleApp.directive('navbar',  function(){
 	return{		
 		restrict: 'E',
+		scope: {},
+		bindToController: {},
 		templateUrl: 'shared/navbar/navbar.html',
 		controller:  [ function(){
 					
@@ -25,3 +27,5 @@ kickleApp.directive('navbar',  function(){
 }); 
 	
 }	
+
+
