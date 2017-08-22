@@ -7,6 +7,7 @@ import { SpellsComponent } from './components/spells/spells.component';
 import { NavbarDirective } from './components/navbar/navbar.component';
 
 import {CharacterDataService} from './service/character-data.service';
+import {StepsService} from './service/steps.service';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import {CharacterDataService} from './service/character-data.service';
     UpgradeModule
   ],
   providers: [
-	CharacterDataService
+	CharacterDataService, StepsService
   ],
   declarations: [
     TalentListComponent,SpellsComponent,NavbarDirective

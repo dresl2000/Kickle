@@ -17,14 +17,12 @@ angular.element(document).ready(function() {
 
 //downgraded components:
 import { TalentListComponent } from './components/talent-list/talent-list.component';
-
 kickleApp.directive(
     'talentList',
     downgradeComponent({ component: TalentListComponent }) as angular.IDirectiveFactory
 );  
 
 import { SpellsComponent } from './components/spells/spells.component';
-
 kickleApp.directive(
     'spells',
     downgradeComponent({ component: SpellsComponent }) as angular.IDirectiveFactory
@@ -33,11 +31,14 @@ kickleApp.directive(
 
 //downgraded services:
 import {CharacterDataService} from './service/character-data.service';
-
 kickleApp
   .factory('characterDataService', downgradeInjectable(CharacterDataService));
 
-
+  
+import {StepsService} from './service/steps.service';
+kickleApp
+  .factory('stepsService', downgradeInjectable(StepsService));
+  
 
 
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
@@ -52,7 +53,7 @@ require("./shared/navbar/navbar.ts")(kickleApp);
 
 require("./service/attributesService.ts")(kickleApp);
 require("./service/characteristicService.ts")(kickleApp);
-require("./service/stepsService.ts")(kickleApp);
+
 
 
 
@@ -69,7 +70,7 @@ kickleApp.config(function($routeProvider){
 	})	
 	.when('/spells',{
 	 templateUrl : 'components/spells/spells.html',
-	 controller  : 'spellsController'
+	 controller  : 'spells'
 	})	
 	.when('/adventure-log',{
 	 templateUrl : 'components/adventureLog/adventure-log.html',
