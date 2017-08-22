@@ -2,6 +2,7 @@ import * as angular from 'angular';
 import 'angular-route';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { downgradeComponent } from '@angular/upgrade/static';
+import { downgradeInjectable } from '@angular/upgrade/static';
 
 import { KickleModule } from './kickle.module';
 
@@ -14,7 +15,7 @@ angular.element(document).ready(function() {
 });	
 
 
-//downgrades
+//downgraded components:
 import { TalentListComponent } from './components/talent-list/talent-list.component';
 
 kickleApp.directive(
@@ -30,6 +31,16 @@ kickleApp.directive(
 );
 
 
+//downgraded services:
+import {CharacterDataService} from './service/character-data.service';
+
+kickleApp
+  .factory('characterDataService', downgradeInjectable(CharacterDataService));
+  //.component('heroDetail', heroDetailComponent);
+
+
+
+
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
 require("./components/attribute/attribute.ts")(kickleApp);
 require("./components/attribute-list/attribute-list.ts")(kickleApp);
@@ -41,7 +52,6 @@ require("./components/stepsOverview/stepsOverview.ts")(kickleApp);
 require("./shared/navbar/navbar.ts")(kickleApp);
 
 require("./service/attributesService.ts")(kickleApp);
-require("./service/characterDataService.ts")(kickleApp);
 require("./service/characteristicService.ts")(kickleApp);
 require("./service/stepsService.ts")(kickleApp);
 

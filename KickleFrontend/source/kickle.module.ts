@@ -6,10 +6,15 @@ import { TalentListComponent } from './components/talent-list/talent-list.compon
 import { SpellsComponent } from './components/spells/spells.component';
 import { NavbarDirective } from './components/navbar/navbar.component';
 
+import {CharacterDataService} from './service/character-data.service';
+
 @NgModule({
   imports: [
     BrowserModule,
     UpgradeModule
+  ],
+  providers: [
+	CharacterDataService
   ],
   declarations: [
     TalentListComponent,SpellsComponent,NavbarDirective

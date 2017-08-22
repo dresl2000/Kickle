@@ -82,3 +82,5 @@ Upgrade Phase:
 
 You can only upgrade AngularJS component directives to Angular.
 
+Migrate to webpack.
+
