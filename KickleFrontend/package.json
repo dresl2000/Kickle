@@ -24,7 +24,7 @@
     "@types/angular": "^1.6.29",
     "@types/node": "^8.0.24",
     "angular": "^1.6.4",
-    "angular-route": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
     "awesome-typescript-loader": "^3.2.3",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",

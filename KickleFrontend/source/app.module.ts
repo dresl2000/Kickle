@@ -1,5 +1,5 @@
 import * as angular from 'angular';
-import 'angular-route';
+import 'angular-ui-router';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { downgradeComponent } from '@angular/upgrade/static';
 import { downgradeInjectable } from '@angular/upgrade/static';
@@ -7,7 +7,7 @@ import { downgradeInjectable } from '@angular/upgrade/static';
 import { KickleModule } from './kickle.module';
 
 
-var kickleApp = angular.module('kickleApp', ['ngRoute']);
+var kickleApp = angular.module('kickleApp',['ui.router']);
 
 
 angular.element(document).ready(function() { 
@@ -56,26 +56,36 @@ require("./service/characteristicService.ts")(kickleApp);
 
 
 
+kickleApp.config(['$stateProvider', function ($stateProvider) {
+        var characterOverview = {
+                name: 'characterOverview',
+                url: '/',
+				templateUrl : 'components/characterOverview/characterOverview.html',
+				controller  : 'characterOverviewController'
+            },
+            steps = {
+                name: 'steps',
+                url: '/steps',
+				templateUrl : 'components/stepsOverview/stepsOverview.html',
+				controller  : 'stepsOverviewController'
+            },
+			/*
+            spells = {
+                name: 'spells',
+                url: '/spells',
+				templateUrl : 'components/spells/spells.html',
+				controller  : 'spells'
+            },*/
+            adventureLog = {
+                name: 'adventureLog',
+                url: '/adventure-log',
+				templateUrl : 'components/adventureLog/adventure-log.html',
+				controller  : 'adventureLogController'
+            };
 
-kickleApp.config(function($routeProvider){
-	
-	$routeProvider
-	.when('/',{
-	templateUrl : 'components/characterOverview/characterOverview.html',
-	 controller  : 'characterOverviewController',
-	}) 
-	.when('/steps',{
-	 templateUrl : 'components/stepsOverview/stepsOverview.html',
-	 controller  : 'stepsOverviewController'
-	})	
-	.when('/spells',{
-	 templateUrl : 'components/spells/spells.html',
-	 controller  : 'spells'
-	})	
-	.when('/adventure-log',{
-	 templateUrl : 'components/adventureLog/adventure-log.html',
-	 controller  : 'adventureLogController'
-	})	
-	.otherwise({redirectTo: '/'});
-		
-});	
+        $stateProvider.state(characterOverview);
+        $stateProvider.state(steps);
+        //$stateProvider.state(spells);
+        $stateProvider.state(adventureLog);
+}]);
+
