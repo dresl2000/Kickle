@@ -42,6 +42,36 @@ export const CHARDATA : any = {
 				"Value": 18,
 				"Increased": 0
 			}	
+		],
+		Talents : [
+			{
+				"Id": 1,
+				"Name": "Fadenweben",
+				"Rank": 4,
+				"Attribute" : "PER",
+				"Circle": 1
+			},
+			{
+				"Id": 2,
+				"Name": "Karmaritual",
+				"Rank": 3,
+				"Attribute" : "-",
+				"Circle": 1
+			},
+			{
+				"Id": 3,
+				"Name": "Lesen/ Schreiben",
+				"Rank": 3,
+				"Attribute" : "PER",
+				"Circle": 1
+			},
+			{
+				"Id": 4,
+				"Name": "Spruchzauberei",
+				"Rank": 4,
+				"Attribute" : "PER",
+				"Circle": 1
+			}		
 		]
 	}]
 };

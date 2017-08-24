@@ -33,7 +33,9 @@ kickleApp.service('attributesService', ['$log','characteristicService','characte
 		
 		attributes = new Array() as Array<Attribute>;			
 		
-		for (let raw of characterDataService.getCharacterData().Characters[0].Attributes) {
+		var attributesRaw = characterDataService.getAttributes();
+		
+		for (let raw of attributesRaw) {
 			attributes.push(new Attribute(raw));
 		}
 		

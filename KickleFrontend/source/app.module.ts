@@ -68,14 +68,12 @@ kickleApp.config(['$stateProvider', function ($stateProvider) {
                 url: '/steps',
 				templateUrl : 'components/stepsOverview/stepsOverview.html',
 				controller  : 'stepsOverviewController'
-            },
-			/*
+            },			
             spells = {
                 name: 'spells',
                 url: '/spells',
-				templateUrl : 'components/spells/spells.html',
-				controller  : 'spells'
-            },*/
+				component  : 'spells'
+            },
             adventureLog = {
                 name: 'adventureLog',
                 url: '/adventure-log',
@@ -85,7 +83,7 @@ kickleApp.config(['$stateProvider', function ($stateProvider) {
 
         $stateProvider.state(characterOverview);
         $stateProvider.state(steps);
-        //$stateProvider.state(spells);
+        $stateProvider.state(spells);
         $stateProvider.state(adventureLog);
 }]);
 
