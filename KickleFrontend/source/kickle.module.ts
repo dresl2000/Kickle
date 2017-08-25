@@ -11,6 +11,7 @@ import { TalentListComponent } from './components/talent-list/talent-list.compon
 import { SpellsComponent } from './components/spells/spells.component';
 import { NavbarDirective } from './components/navbar/navbar.component';
 import { TalentComponent } from './components/talent/talent.component';
+import { DiceDirective } from './directives/dice.directive';
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -37,11 +38,12 @@ import {CharacteristicService} from './service/characteristic.service';
     TalentListComponent,
 	SpellsComponent,
 	NavbarDirective,
-	TalentComponent
+	TalentComponent,
+	DiceDirective
   ],
   entryComponents: [
-    TalentListComponent,
-	SpellsComponent
+	SpellsComponent,
+	TalentListComponent
   ]
 })
 
