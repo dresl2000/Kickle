@@ -71,7 +71,64 @@ export const CHARDATA : any = {
 				"Rank": 4,
 				"Attribute" : "PER",
 				"Circle": 1
-			}		
+			},
+			{
+				"Id": 5,
+				"Name": "Zauberbücher verstehen",
+				"Rank": 2,
+				"Attribute" : "PER",
+				"Circle": 1
+			},
+			{
+				"Id": 6,
+				"Name": "Zaubermatrix",
+				"Rank": 2,
+				"Attribute" : "-",
+				"Circle": 1
+			},
+			{
+				"Id": 7,
+				"Name": "Zaubermatrix",
+				"Rank": 2,
+				"Attribute" : "-",
+				"Circle": 1
+			},
+			{
+				"Id": 8,
+				"Name": "Magische Maske",
+				"Rank": 3,
+				"Attribute" : "PER",
+				"Circle": 2
+			},
+			{
+				"Id": 9,
+				"Name": "Unempfindlichkeit (4/3)",
+				"Rank": 3,
+				"Attribute" : "-",
+				"Circle": 2
+			},
+			{
+				"Id": 10,
+				"Name": "Zaubermatrix",
+				"Rank": 3,
+				"Attribute" : "-",
+				"Circle": 2
+			},
+			{
+				"Id": 11,
+				"Name": "Fremdsprachen",
+				"Rank": 2,
+				"Attribute" : "PER",
+				"Circle": 3
+			},
+			{
+				"Id": 12,
+				"Name": "Totstellen",
+				"Rank": 4,
+				"Attribute" : "CHA",
+				"Circle": 3
+			}
+			
 		]
 	}]
 };
