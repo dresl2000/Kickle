@@ -4,6 +4,10 @@
 <span class="s2sm3">Gesamt</span>
 <span class="s2sm3">Würfel</span>
 
+<span *ngFor="let t of talents">
+	<talent [talent]="t"></talent>
+</span>
+
 <span class="s4sm12 cl">Fadenweben</span>
 <span class="s2sm3">4</span>
 <span class="s2sm3">9</span>
