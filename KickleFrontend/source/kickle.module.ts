@@ -16,6 +16,8 @@ import { TalentComponent } from './components/talent/talent.component';
 import {CharacterDataService} from './service/character-data.service';
 import {StepsService} from './service/steps.service';
 import {TalentService} from './service/talent.service';
+import {AttributeService} from './service/attribute.service';
+import {CharacteristicService} from './service/characteristic.service';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {TalentService} from './service/talent.service';
   providers: [
 	CharacterDataService, 
 	StepsService,
-	TalentService
+	TalentService,
+	AttributeService,
+	CharacteristicService
   ],
   declarations: [
     TalentListComponent,

@@ -6,9 +6,7 @@ import { downgradeInjectable } from '@angular/upgrade/static';
 
 import { KickleModule } from './kickle.module';
 
-
 var kickleApp = angular.module('kickleApp',['ui.router']);
-
 
 angular.element(document).ready(function() { 
 	platformBrowserDynamic().bootstrapModule(KickleModule);	
@@ -40,6 +38,10 @@ kickleApp
   .factory('stepsService', downgradeInjectable(StepsService));
   
 
+import {AttributeService} from './service/attribute.service';
+kickleApp
+  .factory('attributesService', downgradeInjectable(AttributeService));
+  
 
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
 require("./components/attribute/attribute.ts")(kickleApp);
@@ -50,9 +52,6 @@ require("./components/stepsOverview/stepsOverview.ts")(kickleApp);
 
 
 require("./shared/navbar/navbar.ts")(kickleApp);
-
-require("./service/attributesService.ts")(kickleApp);
-require("./service/characteristicService.ts")(kickleApp);
 
 
 

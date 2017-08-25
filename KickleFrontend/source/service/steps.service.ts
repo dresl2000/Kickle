@@ -6,7 +6,7 @@ export class StepsService {
 	
 	private steps : Step[];
 	
-	getDice(step: number): String{
+	getDice(step: number): string{
 		return this.steps[step-1].toString();
 	};
 	 
@@ -53,9 +53,9 @@ class Step {
 					
 	};		
 	
-	toString() : String{
+	toString() : string{
 		
-		let str : String = ''; 
+		let str :string = ''; 
 		
 		for (let die of this.dice) {
 			
@@ -93,7 +93,7 @@ class Die {
 		this.modifier = modifier;
 	};
 	
-	toString() : String{
+	toString() : string{
 		return (this.amount > 1 ? this.amount : '') + 'w' + this.type + (this.modifier != 0 ?  this.modifier : '');
 	};
 	
