@@ -16,24 +16,17 @@ export class TalentService {
 				
 		let talentsRaw = this.characterDataService.getTalents();
 		
-		for (let raw of talentsRaw) {
-			let t : Talent = new Talent();
-								
-			t.Id = raw.Id;
-			t.Name = raw.Name;
-			t.Rank = raw.Rank;
-			t.Attribute = raw.Attribute;
+		for (let r of talentsRaw) {
 			
-			if(t.Attribute == '-'){
-				talents.push(t);	
+			if(r.Attribute == '-'){
+				talents.push(new Talent(r.Id, r.Name, r.Rank, r.Circle));	
 				continue;
 			}
 			
-			let attr = this.attributeService.getAttribute(raw.Attribute);			
-			t.AttributeStep = attr.Step;
-			t.Dice = this.stepsService.getDice(t.AttributeStep + t.Rank);
+			let attr = this.attributeService.getAttribute(r.Attribute);			
+			let dice = this.stepsService.getDice(attr.Step + r.Rank);
 						
-			talents.push(t);
+			talents.push(new Talent(r.Id, r.Name, r.Rank,r.Circle, r.Attribute,attr.Step, dice ));
 		}		
 		
 		return talents;
