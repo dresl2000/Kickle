@@ -26,7 +26,7 @@ export class TalentService {
 			let attr = this.attributeService.getAttribute(r.Attribute);			
 			let dice = this.stepsService.getDice(attr.Step + r.Rank);
 						
-			talents.push(new Talent(r.Id, r.Name, r.Rank,r.Circle, r.Attribute,attr.Step, dice ));
+			talents.push(new Talent(r.Id, r.Name, r.Rank, r.Circle, r.Attribute, attr.Step, dice ));
 		}		
 		
 		return talents;
