@@ -1,0 +1,30 @@
+<div class="container sheet">	
+	<div class="s4sm12">
+		<navbar></navbar>
+		<img class="logo" src="images/Earthdawn-logo.png" />	
+		
+		<div class="s12 section" ng-repeat="note in getNotes()">						
+			<div class="header">{{note.Title}}</div>	
+			<span ng-repeat="txt in note.Text">
+				{{txt}}<br/>
+			</span>								
+		</div>	
+		
+	</div>	
+	<div class="s8med12 section">
+		<div class="header">Abentuer Tagebuch</div>										
+
+			<div ng-repeat="logEntry in getAdventureLog()">
+				<h5 class="">{{logEntry.Title}} ({{logEntry.Date}})</h5>
+				<span>Legendenpunkte: {{logEntry.LegendPoints}}</span><br/>
+				<span ng-repeat="txt in logEntry.Text">
+					{{txt}}<br/>
+				</span>
+				<br/>
+			</div>
+					
+		
+	</div>	 
+	
+	
+</div>	

@@ -66,8 +66,8 @@ gulp.task('build', function() {
   gulp.start('copyHtml');
   gulp.start('copyFonts');
   gulp.start('copyImages');
-  gulp.start('copyJavaScriptLibs');
-  gulp.start('compile-ts');
+  //gulp.start('copyJavaScriptLibs');
+  //gulp.start('compile-ts');
 });
 
 

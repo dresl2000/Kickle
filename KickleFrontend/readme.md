@@ -31,6 +31,10 @@ set PATH=%PATH%;%CD%
 
 
 ## Upgrading to Angular2:
+
+#differences:
+https://angular.io/guide/ajs-quick-reference
+
 https://medium.com/@gsari/upgrade-from-angularjs-to-angular-2-15f3179b7849
 
 http://www.alainchautard.com/how-to-migrate-from-angular-1-to-angular-2/
