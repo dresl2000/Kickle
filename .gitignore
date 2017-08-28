@@ -6,3 +6,17 @@ KickleFrontend/public
 
 KickleFrontend/production
 
+packages
+
+node.cmd
+
+npm.cmd
+
+KickleFrontend/node.cmd
+
+KickleFrontend/npm.cmd
+
+test.js
+
+start test.bat
+
