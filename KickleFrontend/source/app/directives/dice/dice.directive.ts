@@ -1,19 +1,26 @@
 import { Input, Directive, HostListener, ElementRef} from '@angular/core';
+import {StepsService} from '../../service/steps.service';
 
 @Directive({
-    selector: '[dice]'
+    selector: '[dice]',
+	stylesUrl: ['app/directives/dice/dice.directive.css']
 })
 export class DiceDirective { 
 	
 	@Input('step') step: number;
-
-	constructor(private el: ElementRef) { 		
+	@Input('name') name: string;
+	
+	constructor(private el: ElementRef, private stepsService: StepsService ) { 		
 	}
-
 	
 	@HostListener('click') onClick() {
 		this.highlight('yellow');
-		console.log('rolling: ' + this.step );
+		
+		if(isNaN(this.step))
+		{
+			return;
+		}
+		console.log(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);
 	}
 
 	@HostListener('mouseenter') onMouseEnter() {

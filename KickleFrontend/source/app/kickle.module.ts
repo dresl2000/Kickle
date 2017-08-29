@@ -11,7 +11,7 @@ import { TalentListComponent } from './components/talent-list/talent-list.compon
 import { SpellsComponent } from './components/spells/spells.component';
 import { NavbarDirective } from './components/navbar/navbar.component';
 import { TalentComponent } from './components/talent/talent.component';
-import { DiceDirective } from './directives/dice.directive';
+import { DiceDirective } from './directives/dice/dice.directive';
 
 //Services
 import {CharacterDataService} from './service/character-data.service';

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {Talent} from '../../shared/talent';
-import {DiceDirective} from '../../directives/dice.directive';
+import {DiceDirective} from '../../directives/dice/dice.directive';
 
 
 @Component({
@@ -9,7 +9,7 @@ import {DiceDirective} from '../../directives/dice.directive';
 			<span class="s2sm3">{{talent.Rank}}</span>
 			<span class="s2sm3">{{talent.AttributeStep || '-'}}</span>
 			<span class="s2sm3">{{talent.TotalStep || '-'}}</span>
-			<span class="s2sm3" dice [step]="talent.TotalStep" >{{talent.Dice || '-' }} </span>`
+			<span class="s2sm3" dice [step]="talent.TotalStep" [name]="talent.Name" >{{talent.Dice || '-' }} </span>`
 })
 export class TalentComponent { 
 	@Input() talent: Talent;	
