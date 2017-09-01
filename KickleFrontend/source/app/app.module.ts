@@ -26,6 +26,12 @@ kickleApp.directive(
     downgradeComponent({ component: SpellsComponent }) as angular.IDirectiveFactory
 );
 
+import { DiceBoardComponent } from './components/dice-board/dice-board.component';
+kickleApp.directive(
+    'diceBoard',
+    downgradeComponent({ component: DiceBoardComponent }) as angular.IDirectiveFactory
+);
+
 
 //downgraded services:
 import {CharacterDataService} from './service/character-data.service';

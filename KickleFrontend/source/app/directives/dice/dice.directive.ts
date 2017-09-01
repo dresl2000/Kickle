@@ -1,16 +1,17 @@
-import { Input, Directive, HostListener, ElementRef} from '@angular/core';
+import { Input, Directive, HostListener, ElementRef, Output, EventEmitter} from '@angular/core';
 import {StepsService} from '../../service/steps.service';
+import {DiceRollService} from '../../service/dice-roll.service';
+import 'rxjs/Rx';
 
 @Directive({
-    selector: '[dice]',
-	stylesUrl: ['app/directives/dice/dice.directive.css']
+    selector: '[dice]'
 })
 export class DiceDirective { 
 	
 	@Input('step') step: number;
 	@Input('name') name: string;
-	
-	constructor(private el: ElementRef, private stepsService: StepsService ) { 		
+		
+	constructor(private el: ElementRef, private stepsService: StepsService, private diceRollService : DiceRollService ) { 		
 	}
 	
 	@HostListener('click') onClick() {
@@ -21,6 +22,7 @@ export class DiceDirective {
 			return;
 		}
 		console.log(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);
+		this.diceRollService.sendDiceRoll(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);
 	}
 
 	@HostListener('mouseenter') onMouseEnter() {

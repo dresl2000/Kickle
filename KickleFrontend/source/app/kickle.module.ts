@@ -12,6 +12,7 @@ import { SpellsComponent } from './components/spells/spells.component';
 import { NavbarDirective } from './components/navbar/navbar.component';
 import { TalentComponent } from './components/talent/talent.component';
 import { DiceDirective } from './directives/dice/dice.directive';
+import { DiceBoardComponent } from './components/dice-board/dice-board.component';
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -19,6 +20,7 @@ import {StepsService} from './service/steps.service';
 import {TalentService} from './service/talent.service';
 import {AttributeService} from './service/attribute.service';
 import {CharacteristicService} from './service/characteristic.service';
+import {DiceRollService} from './service/dice-roll.service';
 
 
 @NgModule({
@@ -32,18 +34,21 @@ import {CharacteristicService} from './service/characteristic.service';
 	StepsService,
 	TalentService,
 	AttributeService,
-	CharacteristicService
+	CharacteristicService,
+	DiceRollService
   ],
   declarations: [
     TalentListComponent,
 	SpellsComponent,
 	NavbarDirective,
 	TalentComponent,
-	DiceDirective
+	DiceDirective,
+	DiceBoardComponent
   ],
   entryComponents: [
 	SpellsComponent,
-	TalentListComponent
+	TalentListComponent,
+	DiceBoardComponent
   ]
 })
 
