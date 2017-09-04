@@ -1,6 +1,8 @@
 import { Input, Directive, HostListener, ElementRef, Output, EventEmitter} from '@angular/core';
 import {StepsService} from '../../service/steps.service';
 import {DiceRollService} from '../../service/dice-roll.service';
+import {DiceRoll} from '../../shared/diceRoll';
+
 import 'rxjs/Rx';
 
 @Directive({
@@ -21,8 +23,8 @@ export class DiceDirective {
 		{
 			return;
 		}
-		console.log(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);
-		this.diceRollService.sendDiceRoll(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);
+		console.log(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);		
+		this.diceRollService.sendDiceRoll(new DiceRoll(this.name,this.step,this.stepsService.getDice(this.step), this.stepsService.rollStep(this.step) ));
 	}
 
 	@HostListener('mouseenter') onMouseEnter() {
