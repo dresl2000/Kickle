@@ -42,7 +42,7 @@ export const CHARLOG : any = {
 			['Ihrks getroffen. Plan geschmiedet um Aslani zu zerstören.'
 			]
 		},
-					{
+		{
 			Id: 5,
 			Date: '7-13-2017',
 			Title: 'Aslani muss brennen!',
@@ -51,6 +51,16 @@ export const CHARLOG : any = {
 			['Die Getreuen belagern Stadtmauer. Mit Ersticken-Feldern die Getreuen bekämpft. Aslani gesichtet! Doch sie entkommt. Wieder nicht ins Archiv gekommen.'
 			]
 		},
+		{
+			Id: 6,
+			Date: '9-5-2017',
+			Title: '!',
+			LegendPoints: 3500 ,
+			BonusLegendPoints: 500,
+			Text: 
+			['Das Archiv war mit einer Illusion aus 20 Metern hohem Schutt gesichert. Glühende Stadt.'
+			]
+		},		
 	],
 	Notes: [
 		{
