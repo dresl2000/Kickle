@@ -13,6 +13,9 @@ import { NavbarDirective } from './components/navbar/navbar.component';
 import { TalentComponent } from './components/talent/talent.component';
 import { DiceDirective } from './directives/dice/dice.directive';
 import { DiceBoardComponent } from './components/dice-board/dice-board.component';
+import { KarmaComponent } from './components/karma/karma.component';
+import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
+
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -43,12 +46,16 @@ import {DiceRollService} from './service/dice-roll.service';
 	NavbarDirective,
 	TalentComponent,
 	DiceDirective,
-	DiceBoardComponent
+	DiceBoardComponent,
+	KarmaComponent,
+	AdventureWidgetComponent
   ],
   entryComponents: [
 	SpellsComponent,
 	TalentListComponent,
-	DiceBoardComponent
+	DiceBoardComponent,
+	KarmaComponent,
+	AdventureWidgetComponent
   ]
 })
 

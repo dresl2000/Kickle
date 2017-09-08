@@ -32,6 +32,19 @@ kickleApp.directive(
     downgradeComponent({ component: DiceBoardComponent }) as angular.IDirectiveFactory
 );
 
+import { KarmaComponent } from './components/karma/karma.component';
+kickleApp.directive(
+    'karma',
+    downgradeComponent({ component: KarmaComponent }) as angular.IDirectiveFactory
+);
+
+import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
+kickleApp.directive(
+    'adventureWidget',
+    downgradeComponent({ component: AdventureWidgetComponent }) as angular.IDirectiveFactory
+);
+
+
 
 //downgraded services:
 import {CharacterDataService} from './service/character-data.service';

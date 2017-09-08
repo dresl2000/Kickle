@@ -6,7 +6,7 @@ server.use(express.static(__dirname + '/KickleFrontend/public'));
 //server.use(express.static(__dirname + '/KickleFrontend/production'));
 
 
-server.use('/node_modules',express.static('C:\\Users/zimmerera/Desktop/kickle/Kickle/KickleFrontend/node_modules'));
+server.use('/node_modules',express.static('C:\\Users/dresl/Desktop/kickle/KickleFrontend/node_modules'));
 
 var port = 2525;
 server.listen(port, function(){

@@ -5,8 +5,8 @@ import { DiceRoll} from '../../shared/diceRoll';
 
 @Component({
   selector: 'dice-board',
-  template: `<span>Dice Board</span>		
-	{{diceRollstr}}
+  template: `		
+	<span *ngIf="diceRoll">{{diceRoll.Name}} ({{diceRoll.Dice}}): {{diceRoll.Result}} <span><br/>	
      <ul>
       <li *ngFor="let dr of diceRolls | async">
 		{{dr.Name}}: {{dr.Result}}
@@ -16,10 +16,11 @@ import { DiceRoll} from '../../shared/diceRoll';
 export class DiceBoardComponent { 
 
 	subscription: Subscription;
-	diceRollstr : string;
+	private diceRoll : DiceRoll;
+	
 	constructor(private diceRollService : DiceRollService){
 	
-		this.subscription = this.diceRollService.getDiceRoll().subscribe(diceRoll => { console.log( diceRoll.Name);this.diceRollstr = diceRoll.Name; });
+		this.subscription = this.diceRollService.getDiceRoll().subscribe(diceRoll => { console.log( diceRoll.Name);this.diceRoll = diceRoll; });
 	
 	}
 	//this.diceRollService.sendDiceRoll(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);

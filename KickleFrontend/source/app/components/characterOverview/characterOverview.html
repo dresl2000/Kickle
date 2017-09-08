@@ -1,9 +1,8 @@
-<div class="container sheet">	
+<div class="container sheet" ng-controller="characterOverviewController">	
 	
 	<div class="s4sm12">	
 		<navbar></navbar>
-		<img class="logo" src="images/Earthdawn-logo.png" />
-		<dice-board></dice-board>
+		<img class="logo" src="images/Earthdawn-logo.png" />		
 	</div>
 		
 	<div class="s8sm12 section">								
@@ -11,69 +10,67 @@
 	</div>
 								
 	<div class="s4med12 container cl" style="padding-top:0;">
-				
+
+		<div class="s12 section">
+			<div class="header">Würfelbrett</div>								
+			<dice-board></dice-board>									
+		</div>
+	
 		<div class="s12 section">
 			<div class="header">Attribute</div>
 			<attribute-list></attribute-list>
 		</div>					
 	 
 		<div class="s12 section">
-			<div class="header">Karma</div>
-								
-			<span>Max: 60</span>
-			<span>Kosten: 5</span>
-			<span>Würfel: w10</span>
-			<span>Aktuell: 15</span><br/>
-			<span>Gesamt gekauft: 0</span>
+			<div class="header">Karma</div>								
+			<karma></karma>
 		</div>
 	
 		<div class="s12 section">
 			<div class="header">Sprachen</div>
 									
-			<span>Windling (lesen/ schreiben)</span><br/>
-			<span>Troll (lesen/ schreiben)</span>
+			<span ng-repeat="language in getLanguages()" class="tooltip">
+				{{language.Name}}
+				</br>
+				<span class="tooltiptext">{{language.Note}}</span>				
+			</span>									
+
 		</div>							
 		
 		<div class="s12 section">
 			<div class="header">Legendenpunkte</div>
 									
-			<span>Aktuell: 4.200</span><br/>
-			<span>Gesamt: 15.200</span><br/>
-			<span>Legendenstatus: 1 </span>
+			<span>Aktuell: {{getCurrentLegendPoints()| number }}</span><br/>
+			<span>Gesamt: {{getTotalLegendPoints() | number }}</span><br/>
+			<span>Legendenstatus: {{getLegendStatus()}} </span>
 		</div>						
 		
 		<div class="s12 section">
 			<div class="header">Abenteuer</div>
 									
-			<span>Reise in die Zukunft (16.3.2017)</span><br/>
-			<span>Die Bauernrevolte beenden (13.4.2017)</span><br/>
-			<span>Diplomatisches Gemetzel an der Wassersäule (16.5.2017)</span><br/>
-			<span>Wieder nicht ins Archiv geschafft (5.6.2017)</span>
-			<span>Aslani muss brennen! (13.07.2017)</span>
+			<adventure-widget></adventure-widget>
 		</div>						
 		
 		<div class="s12 section">
 			<div class="header">Vermögen</div>
 									
-			<span>Kupfer: 17</span><br/>
-			<span>Silber: 3</span><br/>
-			<span>Gold: 0</span>
+			<span>Kupfer: {{getWallet().Copper}}</span><br/>
+			<span>Silber: {{getWallet().Silver}}</span><br/>
+			<span>Gold: {{getWallet().Gold}}</span>
 		</div>	
 		
 		<div class="s12 section">
 			<div class="header">Ausrüstung</div>
-									
-			<span>Reisekleidung (kostspielig)</span><br/>
-			<span>Abenteuerpaket</span><br/>
-			<span>Querflöte</span><br/>
-			<span>Trompete</span><br/>
-			<span>Windling Harfe</span><br/>
-			<span>Rasseln, Pfeife</span><br/>
-			<span>Tinte, Reisetagebuch</span><br/>
+
+			<span ng-repeat="item in getEquipment()">
+				{{item}}
+				</br>
+			</span>
+			
 		</div>				
 	
 	</div>
-	
+	 
 	<div class="s8med12 section">
 		<div class="header">Charakteristika</div>
 						

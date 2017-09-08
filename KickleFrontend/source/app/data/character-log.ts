@@ -48,17 +48,28 @@ export const CHARLOG : any = {
 			Title: 'Aslani muss brennen!',
 			LegendPoints: 2800,
 			Text: 
-			['Die Getreuen belagern Stadtmauer. Mit Ersticken-Feldern die Getreuen bekämpft. Aslani gesichtet! Doch sie entkommt. Wieder nicht ins Archiv gekommen.'
+			['Die Getreuen belagern Stadtmauer. Mit Ersticken-Feldern die schändlichen Getreuen bekämpft.',
+			'Wir haben Aslani gesichtet, sie hat die Gestalt eines Namensgebers angenommen! Doch mich kann dieser Dämon nicht täuschen.',
+			'Wir waren kurz davor sie in einem Unterschlupf zu stellen. Doch der trickreiche Dämon ist uns wieder durch die Finger geschlüpft.',
+			'Wieder nicht ins Archiv gekommen.'
 			]
 		},
 		{
 			Id: 6,
 			Date: '9-5-2017',
-			Title: '!',
+			Title: 'Die Glühende Stadt',
 			LegendPoints: 3500 ,
 			BonusLegendPoints: 500,
 			Text: 
-			['Das Archiv war mit einer Illusion aus 20 Metern hohem Schutt gesichert. Glühende Stadt.'
+			['Nachdem uns die teuflische Aslani entkommen ist haben wir uns endlich auf zum Archiv gemacht, um dort Beweise für Aslansis ketzerisches Treiben zu sammeln.',
+			'Aslani hat den Weg zu dem Archiv mit unheiliger Magie gesichert und eine Illusion aus Schutt errichtet. Was hat sie zu verbergen?',
+			'Die gewitzte Ihrks hat die dämonische Illusion gleich durchschaut. Nimm das Aslani! Wir befinden uns auf direktem Weg zum Archiv!',
+			'Vor uns liegt eine glühende Stadt. In den Gassen brennen magische Feuer. Den Zugang hat Aslani mit mächtigen Magneten gesichert.',
+			'TokTokToks Schwert Plan B wird von den Magneten festgehalten. Der mächtige Troll ist nicht im Stande das Schwert zu lösen und muss es zurück kassen.',
+			'Ihrks tut so als würde sie von den Magneten angezogen werden und schneidet grosse Löcher in ihr Kleid auf Höhe der Brüste. Ich glaube sie versucht den Troll zu betören.',
+			'Sie bereut ihren Anflug von Wollust und dreht das Kleid herum, allerdings legen die Rückenlöcher für die Flügel ihre Brustwarzen frei. Ich tue so, als würde ich nichts bemerken. ',
+			'Wir erkunden die Stadt und durchstöbern ein leeres Haus. Es steht schon seit jahrhunderten leer. Ein lodernder Kadavermensch - ein Diener Aslanis - greift uns an. Mit gemeinsamen Kräften ringen wird das Dämonenkonstrukt nieder.',
+			'Wieder nicht ins Archiv gekommen.'
 			]
 		},		
 	],

@@ -11,6 +11,18 @@ export const CHARDATA : any = {
 		Race: {Id: 0, Name: 'Windling'},
 		Sex: {Id: 1, Name: 'männlich'},
 		Age: 36,
+		Karma: {
+			Max: 60,
+			Current: 15,
+			Cost: 5,
+			TotalBought: 0,
+			Step: 6
+		},
+		LegendPoints : {
+			Current : 4200,
+			Total: 15200,
+			Status: "I"
+		},		
 		Attributes: [
 			{
 				"Type":"DEX",
@@ -129,6 +141,45 @@ export const CHARDATA : any = {
 				"Circle": 3
 			}
 			
-		]
+		],
+		Skills : [
+		{
+			"Id": 1,
+			"Name": "Musizieren",
+			"Rank": 2,
+			"Attribute" : "CHA",
+			"IsSkill": true
+		},
+		{
+			"Id": 2,
+			"Name": "Konversation",
+			"Rank": 1,
+			"Attribute" : "CHA",
+			"IsSkill": true
+		},
+		Equipment: [
+			"Reisekleidung (kostspielig)",
+			"Abenteuerpaket",
+			"Querflöte",
+			"Trompete",
+			"Windling Harfe",
+			"Rasseln, Pfeife",
+			"Tinte, Reisetagebuch"
+		],
+		Wallet : {
+			"Gold":0,
+			"Silver": 3,
+			"Copper": 17
+		},
+		Languages: [
+			{
+				Name: "Windling (lesen/ schreiben)",
+				Note: "Muttersprache"
+			},
+			{
+				Name: "Troll (lesen/ schreiben)",
+				Note: "Zweitsprache - anstelle von Zwergisch"
+			}
+		]					
 	}]
 };
