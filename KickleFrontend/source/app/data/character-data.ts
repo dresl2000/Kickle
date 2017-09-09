@@ -156,7 +156,7 @@ export const CHARDATA : any = {
 			"Rank": 1,
 			"Attribute" : "CHA",
 			"IsSkill": true
-		},
+		}],
 		Equipment: [
 			"Reisekleidung (kostspielig)",
 			"Abenteuerpaket",
