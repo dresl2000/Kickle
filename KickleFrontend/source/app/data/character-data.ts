@@ -19,7 +19,7 @@ export const CHARDATA : any = {
 			Step: 6
 		},
 		LegendPoints : {
-			Current : 4200,
+			Current : 0,
 			Total: 15200,
 			Status: "I"
 		},		
@@ -59,7 +59,7 @@ export const CHARDATA : any = {
 			{
 				"Id": 1,
 				"Name": "Fadenweben",
-				"Rank": 4,
+				"Rank": 5,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
@@ -80,21 +80,21 @@ export const CHARDATA : any = {
 			{
 				"Id": 4,
 				"Name": "Spruchzauberei",
-				"Rank": 4,
+				"Rank": 5,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
 			{
 				"Id": 5,
 				"Name": "Zauberbücher verstehen",
-				"Rank": 2,
+				"Rank": 4,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
 			{
 				"Id": 6,
 				"Name": "Zaubermatrix",
-				"Rank": 2,
+				"Rank": 4,
 				"Attribute" : "-",
 				"Circle": 1
 			},
@@ -108,14 +108,14 @@ export const CHARDATA : any = {
 			{
 				"Id": 8,
 				"Name": "Magische Maske",
-				"Rank": 3,
+				"Rank": 4,
 				"Attribute" : "PER",
 				"Circle": 2
 			},
 			{
 				"Id": 9,
 				"Name": "Unempfindlichkeit (4/3)",
-				"Rank": 3,
+				"Rank": 4,
 				"Attribute" : "-",
 				"Circle": 2
 			},
