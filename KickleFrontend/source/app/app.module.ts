@@ -44,12 +44,20 @@ kickleApp.directive(
     downgradeComponent({ component: AdventureWidgetComponent }) as angular.IDirectiveFactory
 );
 
-
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 kickleApp.directive(
     'skillList',
     downgradeComponent({ component: SkillListComponent }) as angular.IDirectiveFactory
 );
+
+import { StepsOverviewComponent } from './components/steps-overview/steps-overview.component';
+kickleApp.directive(
+    'stepsOverview',
+    downgradeComponent({ component: StepsOverviewComponent }) as angular.IDirectiveFactory
+);
+
+
+
 
 
 //downgraded services:
@@ -73,7 +81,6 @@ require("./components/attribute/attribute.ts")(kickleApp);
 require("./components/attribute-list/attribute-list.ts")(kickleApp);
 require("./components/characterOverview/characterOverview.ts")(kickleApp);
 require("./components/characterDescription/characterDescription.ts")(kickleApp);
-require("./components/stepsOverview/stepsOverview.ts")(kickleApp);
 
 
 require("./shared/navbar/navbar.ts")(kickleApp);
@@ -90,8 +97,7 @@ kickleApp.config(['$stateProvider', function ($stateProvider) {
             steps = {
                 name: 'steps',
                 url: '/steps',
-				templateUrl : 'app/components/stepsOverview/stepsOverview.html',
-				controller  : 'stepsOverviewController'
+				component : 'stepsOverview'
             },			
             spells = {
                 name: 'spells',

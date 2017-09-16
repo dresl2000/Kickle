@@ -16,6 +16,7 @@ import { DiceBoardComponent } from './components/dice-board/dice-board.component
 import { KarmaComponent } from './components/karma/karma.component';
 import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
+import { StepsOverviewComponent } from './components/steps-overview/steps-overview.component';
 
 
 //Services
@@ -50,7 +51,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	DiceBoardComponent,
 	KarmaComponent,
 	AdventureWidgetComponent,
-	SkillListComponent
+	SkillListComponent,
+	StepsOverviewComponent
   ],
   entryComponents: [
 	SpellsComponent,
@@ -58,7 +60,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	DiceBoardComponent,
 	KarmaComponent,
 	AdventureWidgetComponent,
-	SkillListComponent
+	SkillListComponent,
+	StepsOverviewComponent
   ]
 })
 

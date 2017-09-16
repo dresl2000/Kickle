@@ -1,0 +1,25 @@
+<div class="container sheet">	
+	<div class="s4med12 container cl" style="padding-top:0;">
+		<navbar></navbar>
+		<img class="logo" src="images/Earthdawn-logo.png" />	
+		
+		<div class="s12 section">
+			<div class="header">Würfelbrett</div>								
+			<dice-board></dice-board>									
+		</div>
+		
+	</div>	
+
+	<div class="s8sm12 section">								
+		<h1>Stufen &Uuml;bersicht</h1><br/>
+
+		<ol>
+			<li *ngFor="let step of steps">
+				<span dice [step]="step.stepNumber" [name]="Stufe" >{{step.toString()}}</span>
+			</li>
+		</ol>		
+		
+	</div>
+	
+	
+</div>	
