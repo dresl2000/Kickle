@@ -1,0 +1,13 @@
+<span class="s4sm12 cl"></span>
+<span class="s2sm3">Rang</span>
+<span class="s2sm3">Attr. Stufe</span>
+<span class="s2sm3">Gesamt</span>
+<span class="s2sm3">Würfel</span>
+
+<span *ngFor="let skill of skills">
+	<span class="s4sm12 cl">{{skill.Name}}</span>
+	<span class="s2sm3">{{skill.Rank}}</span>
+	<span class="s2sm3">{{skill.AttributeStep}}</span>
+	<span class="s2sm3">{{skill.TotalStep }}</span>
+	<span class="s2sm3" dice [step]="skill.TotalStep" [name]="skill.Name" >{{skill.Dice}} </span>
+</span>

@@ -117,7 +117,8 @@ export const CHARDATA : any = {
 				"Name": "Unempfindlichkeit (4/3)",
 				"Rank": 4,
 				"Attribute" : "-",
-				"Circle": 2
+				"Circle": 2,
+				"IsDurability": true
 			},
 			{
 				"Id": 10,
@@ -148,14 +149,14 @@ export const CHARDATA : any = {
 			"Name": "Musizieren",
 			"Rank": 2,
 			"Attribute" : "CHA",
-			"IsSkill": true
+			"InitalValue" : 2
 		},
 		{
 			"Id": 2,
 			"Name": "Konversation",
 			"Rank": 1,
 			"Attribute" : "CHA",
-			"IsSkill": true
+			"InitalValue" : 1
 		}],
 		Equipment: [
 			"Reisekleidung (kostspielig)",

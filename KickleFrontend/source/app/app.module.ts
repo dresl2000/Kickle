@@ -45,6 +45,12 @@ kickleApp.directive(
 );
 
 
+import { SkillListComponent } from './components/skill-list/skill-list.component';
+kickleApp.directive(
+    'skillList',
+    downgradeComponent({ component: SkillListComponent }) as angular.IDirectiveFactory
+);
+
 
 //downgraded services:
 import {CharacterDataService} from './service/character-data.service';

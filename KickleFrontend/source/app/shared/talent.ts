@@ -17,6 +17,15 @@ export class Talent {
 	public readonly Attribute: string;
 	public readonly Circle: number;
 	public readonly AttributeStep: number;
+
+	public readonly IsDisciplineTalent : boolean;
+	public readonly IsDurability : boolean;	
+	public readonly InitalValue : number;
+	public readonly IsAction : boolean;
+	public readonly Strain : number;
+	public readonly RequiresKarma : boolean;
+	
+	public readonly AdditionalLegendPointCost : number;//as second discipline
 	
     get TotalStep(): number {
         return this.Rank + this.AttributeStep;

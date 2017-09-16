@@ -15,6 +15,7 @@ import { DiceDirective } from './directives/dice/dice.directive';
 import { DiceBoardComponent } from './components/dice-board/dice-board.component';
 import { KarmaComponent } from './components/karma/karma.component';
 import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
+import { SkillListComponent } from './components/skill-list/skill-list.component';
 
 
 //Services
@@ -48,14 +49,16 @@ import {DiceRollService} from './service/dice-roll.service';
 	DiceDirective,
 	DiceBoardComponent,
 	KarmaComponent,
-	AdventureWidgetComponent
+	AdventureWidgetComponent,
+	SkillListComponent
   ],
   entryComponents: [
 	SpellsComponent,
 	TalentListComponent,
 	DiceBoardComponent,
 	KarmaComponent,
-	AdventureWidgetComponent
+	AdventureWidgetComponent,
+	SkillListComponent
   ]
 })
 

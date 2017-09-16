@@ -17,6 +17,10 @@ export class CharacterDataService {
 		return CHARDATA.Characters[0].Talents;
 	}
 
+	public getSkills() : any {					
+		return CHARDATA.Characters[0].Skills;
+	}	
+	
 	public getKarma() : any {					
 		return CHARDATA.Characters[0].Karma;
 	}

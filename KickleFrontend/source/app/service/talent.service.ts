@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CharacterDataService } from './character-data.service'
 import { Talent } from '../shared/talent'
+import { Skill } from '../shared/skill'
 import {AttributeService} from './attribute.service'
 import {StepsService} from './steps.service'
 
@@ -31,5 +32,22 @@ export class TalentService {
 		
 		return talents;
 	}
+	
+	public getSkills() : Skill[] {
+				
+		let skills : Skill[] = new Array() as Array<Skill>;	
+				
+		let skillsRaw = this.characterDataService.getSkills();
+		
+		for (let r of skillsRaw) {
+			
+			let attr = this.attributeService.getAttribute(r.Attribute);			
+			let dice = this.stepsService.getDice(attr.Step + r.Rank);
+						
+			skills.push(new Talent(r.Id, r.Name, r.Rank, r.InitialValue, r.Attribute, attr.Step, dice ));
+		}		
+		
+		return skills;
+	}	
 	
 }
