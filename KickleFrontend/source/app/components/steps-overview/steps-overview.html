@@ -15,7 +15,7 @@
 
 		<ol>
 			<li *ngFor="let step of steps">
-				<span dice [step]="step.stepNumber" [name]="Stufe" >{{step.toString()}}</span>
+				<span dice [step]="step.stepNumber" [name]="'Stufe ' + step.stepNumber" >{{step.toString()}}</span>
 			</li>
 		</ol>		
 		
