@@ -10,10 +10,10 @@ import { DiceRoll} from '../../shared/diceRoll';
 	
 	<span *ngIf="displayHistory">
 		<h1>History</h1>
-		
 		<ul>
-		  <li *ngFor="let dr of diceRolls | async">
-			{{dr.Name}}: {{dr.Result}}
+		  <li>dd</li>
+		  <li *ngFor="let dr of diceRolls">
+			{{dr.Name}} ({{dr.Dice}}): {{dr.Result}}
 		  </li>
 		</ul>		
 		
@@ -29,14 +29,11 @@ export class DiceBoardComponent {
 	private diceRoll : DiceRoll;
 	public diceRolls : DiceRoll[];
 	
-	ngOnInit(){
-		this.diceRolls = [];
 		
-	}
-	
 	constructor(private diceRollService : DiceRollService){
 	
-		this.subscription = this.diceRollService.getDiceRoll().subscribe(diceRoll => { console.log( diceRoll.Name);this.diceRolls.push(this.diceRoll); this.diceRoll = diceRoll; });
+		this.diceRolls = [];
+		this.subscription = this.diceRollService.getDiceRoll().subscribe(diceRoll => this.actOnDiceRoll(diceRoll));		
 	
 	}
 	
@@ -45,5 +42,12 @@ export class DiceBoardComponent {
         this.subscription.unsubscribe();
     }	
 	
+	actOnDiceRoll(diceRoll: DiceRoll)
+	{
+		console.log( diceRoll.Name + ' array length:' + this.diceRolls.length);
+		this.diceRoll = diceRoll;
+		this.diceRolls.push(new DiceRoll(diceRoll.Name, diceRoll.Step, diceRoll.Dice, diceRoll.Result)); 
+		
+	}
 	
 }
