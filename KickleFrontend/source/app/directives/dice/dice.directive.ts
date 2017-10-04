@@ -24,7 +24,7 @@ export class DiceDirective {
 			return;
 		}
 		console.log(`rolling ${this.name} (${this.stepsService.getDice(this.step)}) ->  ${this.stepsService.rollStep(this.step)}`);		
-		this.diceRollService.sendDiceRoll(new DiceRoll(this.name,this.step,this.stepsService.getDice(this.step), this.stepsService.rollStep(this.step) ));
+		this.diceRollService.sendDiceRoll(new DiceRoll(this.name,this.step,this.stepsService.getDice(this.step), this.stepsService.rollStep(this.step), new Date() ));
 	}
 
 	@HostListener('mouseenter') onMouseEnter() {

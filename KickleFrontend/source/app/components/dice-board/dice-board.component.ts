@@ -2,6 +2,7 @@ import { Component, OnDestroy, Input  } from '@angular/core';
 import {Subscription  } from 'rxjs/Rx';
 import {DiceRollService} from '../../service/dice-roll.service';
 import { DiceRoll} from '../../shared/diceRoll';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'dice-board',
@@ -12,7 +13,7 @@ import { DiceRoll} from '../../shared/diceRoll';
 		<h1>History</h1>
 		<ul>
 		  <li *ngFor="let dr of diceRolls">
-			{{dr.Name}} ({{dr.Dice}}): {{dr.Result}}
+			[{{dr.TimeStamp |  date:'hh:mm:ss'}}] {{dr.Name}} ({{dr.Dice}}): {{dr.Result}} 
 		  </li>
 		</ul>		
 		
@@ -45,7 +46,7 @@ export class DiceBoardComponent {
 	{
 		console.log( diceRoll.Name + ' array length:' + this.diceRolls.length);
 		this.diceRoll = diceRoll;
-		this.diceRolls.push(new DiceRoll(diceRoll.Name, diceRoll.Step, diceRoll.Dice, diceRoll.Result)); 
+		this.diceRolls.push(new DiceRoll(diceRoll.Name, diceRoll.Step, diceRoll.Dice, diceRoll.Result, new Date())); 
 		
 	}
 	
