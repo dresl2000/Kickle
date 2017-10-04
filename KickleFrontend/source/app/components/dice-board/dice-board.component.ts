@@ -11,7 +11,6 @@ import { DiceRoll} from '../../shared/diceRoll';
 	<span *ngIf="displayHistory">
 		<h1>History</h1>
 		<ul>
-		  <li>dd</li>
 		  <li *ngFor="let dr of diceRolls">
 			{{dr.Name}} ({{dr.Dice}}): {{dr.Result}}
 		  </li>
