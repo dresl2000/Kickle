@@ -19,7 +19,8 @@ import { DatePipe } from '@angular/common';
 		
 	</span>
 	
-    `
+    `,
+	styles: ['ul, li {list-style-type: none;}']
 })
 export class DiceBoardComponent { 
 
@@ -47,7 +48,20 @@ export class DiceBoardComponent {
 		console.log( diceRoll.Name + ' array length:' + this.diceRolls.length);
 		this.diceRoll = diceRoll;
 		this.diceRolls.push(new DiceRoll(diceRoll.Name, diceRoll.Step, diceRoll.Dice, diceRoll.Result, new Date())); 
-		
+		this.diceRolls.sort((n1,n2) => 
+			{
+			
+				if (n1.TimeStamp.getTime() < n2.TimeStamp.getTime()) {
+					return 1;
+				}
+
+				if (n1.TimeStamp.getTime() > n2.TimeStamp.getTime()) {
+					return -1;
+				}
+
+				return 0;
+			});
+			
 	}
 	
 }
