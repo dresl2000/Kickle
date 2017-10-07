@@ -16,22 +16,19 @@ export class TalentRankCostTableComponent {
 	
 	ngOnInit(){
 		this.costTable = [];
-				
-		
+						
 		for(var i: number = 0;i <= 14; i++)
 		{
 			this.costTable[i] = [];	
-			this.costTable[i][i] = i + 1;
+			this.costTable[i][0] = i + 1;
+			
+			for(var j: number = 1; j <= 4; j++)
+			{					
+				this.costTable[i][j] = this.rulesService.getRankCostForCircle(i + 1, j * 4);
+			}			
+			
 		}
-		
-		for(var i: number = 1; i <= 4; i++)
-		{
-					
-			//for(
-		}
-		
-		let cost = this.rulesService.getRankCostForCircle(15,15);
-		console.log("cost:" + cost);
+
 	}
 
 }
