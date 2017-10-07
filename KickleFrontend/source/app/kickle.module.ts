@@ -17,6 +17,7 @@ import { KarmaComponent } from './components/karma/karma.component';
 import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { StepsOverviewComponent } from './components/steps-overview/steps-overview.component';
+import { RulesOverviewComponent } from './components/rules-overview/rules-overview.component';
 
 
 //Services
@@ -52,7 +53,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	KarmaComponent,
 	AdventureWidgetComponent,
 	SkillListComponent,
-	StepsOverviewComponent
+	StepsOverviewComponent,
+	RulesOverviewComponent
   ],
   entryComponents: [
 	SpellsComponent,
@@ -61,7 +63,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	KarmaComponent,
 	AdventureWidgetComponent,
 	SkillListComponent,
-	StepsOverviewComponent
+	StepsOverviewComponent,
+	RulesOverviewComponent
   ]
 })
 

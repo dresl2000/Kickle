@@ -56,6 +56,11 @@ kickleApp.directive(
     downgradeComponent({ component: StepsOverviewComponent }) as angular.IDirectiveFactory
 );
 
+import { RulesOverviewComponent } from './components/rules-overview/rules-overview.component';
+kickleApp.directive(
+    'rulesOverview',
+    downgradeComponent({ component: RulesOverviewComponent }) as angular.IDirectiveFactory
+);
 
 
 
@@ -109,11 +114,17 @@ kickleApp.config(['$stateProvider', function ($stateProvider) {
                 url: '/adventure-log',
 				templateUrl : 'app/components/adventureLog/adventure-log.html',
 				controller  : 'adventureLogController'
+            },
+            rulesOverview = {
+                name: 'rulesOverview',
+                url: '/rules-overview',
+				component  : 'rulesOverview'
             };
 
         $stateProvider.state(characterOverview);
         $stateProvider.state(steps);
         $stateProvider.state(spells);
         $stateProvider.state(adventureLog);
+		$stateProvider.state(rulesOverview);
 }]);
 
