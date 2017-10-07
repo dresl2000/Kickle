@@ -18,6 +18,7 @@ import { AdventureWidgetComponent } from './components/adventure-widget/adventur
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { StepsOverviewComponent } from './components/steps-overview/steps-overview.component';
 import { RulesOverviewComponent } from './components/rules-overview/rules-overview.component';
+import { TalentRankCostTableComponent } from './components/talent-rank-cost-table/talent-rank-cost-table.component';
 
 
 //Services
@@ -27,6 +28,7 @@ import {TalentService} from './service/talent.service';
 import {AttributeService} from './service/attribute.service';
 import {CharacteristicService} from './service/characteristic.service';
 import {DiceRollService} from './service/dice-roll.service';
+import {RulesService} from './service/rules.service';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	TalentService,
 	AttributeService,
 	CharacteristicService,
-	DiceRollService
+	DiceRollService,
+	RulesService
   ],
   declarations: [
     TalentListComponent,
@@ -54,7 +57,8 @@ import {DiceRollService} from './service/dice-roll.service';
 	AdventureWidgetComponent,
 	SkillListComponent,
 	StepsOverviewComponent,
-	RulesOverviewComponent
+	RulesOverviewComponent,
+	TalentRankCostTableComponent
   ],
   entryComponents: [
 	SpellsComponent,
