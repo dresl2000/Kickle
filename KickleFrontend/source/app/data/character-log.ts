@@ -72,6 +72,20 @@ export const CHARLOG : any = {
 			'Wieder nicht ins Archiv gekommen.'
 			]
 		},		
+		{
+			Id: 7,
+			Date: '10-17-2017',
+			Title: '',
+			LegendPoints: 4000 ,
+			BonusLegendPoints: 500,
+			Text: 
+			['Warum hat Aslani die ganze Stadt angezuendet?',
+			'drogensuechtiger windling sieht blue lichter und sprechende namensgeber',
+			'Aslani hebt Armee aus, plant das Kear zu ueberrennen',
+			'Irks verliert wertvolles amuluett, schwer zu konzentrieren',
+			'Pyke schiesst giantischen Blitz auf brennenden Kadavermensch'
+			]
+		},			
 	],
 	Notes: [
 		{
