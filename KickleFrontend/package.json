@@ -6,7 +6,8 @@
   "license": "ISC",
   "main": "app.module.ts",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "karma start"
   },
   "dependencies": {
     "@angular/animations": "^4.3.3",
@@ -28,14 +29,17 @@
     "awesome-typescript-loader": "^3.2.3",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
+    "npm-check-updates": "^2.13.0",
     "rxjs": "^5.4.3",
     "susy": "^2.2.12",
     "webpack": "^3.5.5",
     "zone.js": "^0.8.16"
   },
   "devDependencies": {
+    "@types/webpack-env": "^1.13.2",
     "angular-mocks": "^1.6.4",
     "angular-ui-router": "^1.0.3",
+    "angular2-template-loader": "^0.6.2",
     "concat": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -45,13 +49,19 @@
     "gulp-typescript": "^3.1.6",
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
+    "jasmine": "^2.8.0",
     "jasmine-core": "^2.6.3",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.5",
     "noop": "^0.2.2",
     "protractor": "^5.1.2",
+    "raw-loader": "^0.5.1",
+    "requirejs": "^2.3.5",
     "typescript": "^2.2.2",
     "uglify": "^0.1.5",
     "webdriver-manager": "^12.0.6"

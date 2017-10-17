@@ -10,7 +10,7 @@ module.exports = {
   },
   // Currently we need to add '.ts' to the resolve.extensions array. 
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx','.html']
   },
  
   // Source maps support ('inline-source-map' also works) 
@@ -22,7 +22,11 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader'
-      }
+      },
+	  {
+		test: /\.html$/,
+		loader: 'raw'
+	  }
     ]
   },
   plugins: [

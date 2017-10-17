@@ -13,6 +13,8 @@ https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 http://jbavari.github.io/blog/2014/06/11/unit-testing-angularjs-services/
 
 ##unit tests:
+https://medium.com/@lacolaco/setting-up-angular-2-testing-environment-with-karma-and-webpack-e9b833befd99
+
 karma start
 
 
