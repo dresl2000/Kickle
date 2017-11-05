@@ -75,15 +75,18 @@ export const CHARLOG : any = {
 		{
 			Id: 7,
 			Date: '10-17-2017',
-			Title: '',
+			Title: 'Aslanis Armee der Finsternis',
 			LegendPoints: 4000 ,
 			BonusLegendPoints: 500,
 			Text: 
-			['Warum hat Aslani die ganze Stadt angezuendet?',
-			'drogensuechtiger windling sieht blue lichter und sprechende namensgeber',
-			'Aslani hebt Armee aus, plant das Kear zu ueberrennen',
-			'Irks verliert wertvolles amuluett, schwer zu konzentrieren',
-			'Pyke schiesst giantischen Blitz auf brennenden Kadavermensch'
+			[
+			'Wir setzen unseren Weg durch die brennende Stadt fort. Unsere einzigen Begleiter sind das Knistern der Flammen, der Hall unserer eigenen Schritte und TokTokToks schweres Seufzen. Öliger Rauch raubt uns den Atem,  brennt in unseren Augen und vernebelt den Blick. Doch Raggok verleiht uns Kraft und Vestrial eine klare Sicht.',
+			'Wir erreichen einen kleinen Friedhof, hier ruhen glücklose Adepten aus besseren Tagen. Womöglich haben barsaivische Sitten und Gebräuche die sentimentalen Bauern Tölpel dazu bewogen mächtige Artifakte mit den Verstorbenen zu begraben. Wir müssen die Gräber freilegen!',
+			'Das Scharren und Graben stört meinen Mittagsschlaf. Schlecht gelaunt begebe ich mich auf einen Erkundungsflug. Bei Raggok! In dem angrenzenden Viertel wimmelt es nur so von Kadavermenschen! Aslani hebt hier eine ganze Armee der Finsternis aus! Sie plant damit das ganze Kear zu überrennen! Endlich habe ich die fehlenden Beweise! Triumphierend fliege ich zu den Anderen zurück. Vielleicht können wir Aslanis eigene Waffen gegen sie einsetzen und Kontrolle über die Zombie Armee erlangen.',
+			'TokTokTok ist noch fleißig am Graben. Wildes Geschrei! In dem Grab bewegt sich der brennende Leichnam eines Adepten! Was ist hier nur geschehen? Bevor sich der Kadavermensch befreien kann schieße ich einen Blitz auf ihn. Ein Treffer und er explodiert mit einem lauten Knall! Grenzenlose Macht!',
+			'Ihrks hat sich währenddessen in das angrenzende Stadthaus zurück gezogen, um dort Drogen zu rauchen. Sie kommt völlig verstört zurück und faselt wirres Zeug. Sie kommt gar nicht zur Ruhe und stammelt etwas von sprechenden Lichtern. Arme Ihrks. Die Drogen und der Stress der letzten Tage haben ihr reichlich zugesetzt. Wir folgen dem aufgebrachten Windling in das Stadthaus. Bei Vestrial! Sie hatte recht! Hier gehen Geister um!',
+			'Von einem Balkon aus beobachten wir einen Kadavermenschen. Er zeigt in unsere Richtung und spurtet los. Gibt es eine Verbindung zwischen dem Amulett von Pyke und dem Kadavermensch? Ihrks schnappt es sich und flieg davon! Ich nehme die Verfolgung auf. Oh nein! Jetzt hat sie es verloren! Schnatternd geht sie auf mich los. Wirre Anschuldigungen ergießen sich über mich. Ihre Brustwarzen sind vor Aufregung aufgerichtet. Ich versuchte ihr krampfhaft ins Gesicht zu schauen. Schnell weg hier! Pyke hat das Amulett wieder! Mit welch unheiliger Magie wurde es verhext? Der Mensch schießt einen gigantischen Blitz auf den herannahenden Kadavermenschen.',
+			'Wieder nicht ins Archiv gekommen.'
 			]
 		},			
 	],
