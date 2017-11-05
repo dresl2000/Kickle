@@ -7,7 +7,7 @@ export const CHARDATA : any = {
 	{
 		Id: 1,
 		Name: 'Kickle Cubicle',
-		Discipline: { Id:0, Name:'Illustionist', Circle: 3},
+		Discipline: { Id:0, Name:'Illustionist', Circle: 4},
 		Race: {Id: 0, Name: 'Windling'},
 		Sex: {Id: 1, Name: 'männlich'},
 		Age: 36,
@@ -19,8 +19,8 @@ export const CHARDATA : any = {
 			Step: 6
 		},
 		LegendPoints : {
-			Current : 0,
-			Total: 15200,
+			Current : 200,
+			Total: 19700,
 			Status: "I"
 		},		
 		Attributes: [
@@ -59,7 +59,7 @@ export const CHARDATA : any = {
 			{
 				"Id": 1,
 				"Name": "Fadenweben",
-				"Rank": 5,
+				"Rank": 6,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
@@ -73,14 +73,14 @@ export const CHARDATA : any = {
 			{
 				"Id": 3,
 				"Name": "Lesen/ Schreiben",
-				"Rank": 3,
+				"Rank": 4,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
 			{
 				"Id": 4,
 				"Name": "Spruchzauberei",
-				"Rank": 5,
+				"Rank": 6,
 				"Attribute" : "PER",
 				"Circle": 1
 			},
@@ -140,7 +140,22 @@ export const CHARDATA : any = {
 				"Rank": 4,
 				"Attribute" : "CHA",
 				"Circle": 3
+			},
+			{
+				"Id": 13,
+				"Name": "Totstellen",
+				"Rank": 3,
+				"Attribute" : "CHA",
+				"Circle": 4
+			},
+			{
+				"Id": 14,
+				"Name": "Illusionsverstärkung",
+				"Rank": 3,
+				"Attribute" : "PER",
+				"Circle": 4
 			}
+			
 			
 		],
 		Skills : [
