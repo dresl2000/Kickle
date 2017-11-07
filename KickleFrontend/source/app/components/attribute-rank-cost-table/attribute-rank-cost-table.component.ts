@@ -22,7 +22,7 @@ export class AttributeRankCostTableComponent {
 			this.costTable[i] = [];	
 			this.costTable[i][0] = i + 1;
 			
-			this.costTable[i][1] = this.rulesService.getRankCostForCircle(i + 5, 1);
+			this.costTable[i][1] = this.rulesService.getAttributeCost(i + 1);
 						
 		}
 

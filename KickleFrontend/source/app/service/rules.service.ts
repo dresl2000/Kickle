@@ -17,6 +17,10 @@ export class RulesService {
 			return this.getRankCost(rank + 3);				
 	}		
 	
+	public getAttributeCost(rank: number) : number {		
+		return this.getRankCost(rank + 4);
+	}
+	
 	private getRankCost(rank: number) : number {
 	
 		if(rank == 1)
