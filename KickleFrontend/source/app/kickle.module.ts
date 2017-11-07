@@ -20,6 +20,7 @@ import { StepsOverviewComponent } from './components/steps-overview/steps-overvi
 import { RulesOverviewComponent } from './components/rules-overview/rules-overview.component';
 import { TalentRankCostTableComponent } from './components/talent-rank-cost-table/talent-rank-cost-table.component';
 import { AttributeRankCostTableComponent } from './components/attribute-rank-cost-table/attribute-rank-cost-table.component';
+import { SkillRankCostTableComponent } from './components/skill-rank-cost-table/skill-rank-cost-table.component';
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -59,7 +60,8 @@ import {RulesService} from './service/rules.service';
 	StepsOverviewComponent,
 	RulesOverviewComponent,
 	TalentRankCostTableComponent,
-	AttributeRankCostTableComponent
+	AttributeRankCostTableComponent,
+	SkillRankCostTableComponent
   ],
   entryComponents: [
 	SpellsComponent,
