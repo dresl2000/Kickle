@@ -52,6 +52,10 @@ $large: 1080px;
 .s7{
 	@include span(7 of 12 border-box);	 	
 }  
+
+.s12{
+	@include span(12 of 12 border-box);	 	
+}
  
 .s2med2sm1{
 	@include span(2 of 12 border-box);	

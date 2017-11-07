@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import {CharacterDataService} from '../../service/character-data.service';
 
 
 @Component({
@@ -8,8 +7,6 @@ import { Component } from '@angular/core';
   
 })
 export class RulesOverviewComponent { 
-
-	adventureLog: any;
 
 	constructor() {
 	}
