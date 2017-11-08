@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import {RulesService} from '../../service/rules.service';
+import {BuildingYourLegendService} from '../../../service/building-your-legend.service';
 
 
 
 
 @Component({
   selector: 'skill-rank-cost-table',
-  templateUrl: 'app/components/skill-rank-cost-table/skill-rank-cost-table.html'
+  templateUrl: 'app/components/building-your-legend/skill-rank-cost-table/skill-rank-cost-table.html'
 })
 export class SkillRankCostTableComponent { 
 
 	public costTable : number[][];
 	
-	constructor(private rulesService: RulesService) { }
+	constructor(private buildingYourLegendService: BuildingYourLegendService) { }
 	
 	ngOnInit(){
 		this.costTable = [];
@@ -22,7 +22,7 @@ export class SkillRankCostTableComponent {
 			this.costTable[i] = [];	
 			this.costTable[i][0] = i + 1;
 			
-			this.costTable[i][1] = this.rulesService.getSkillCost(i + 1);
+			this.costTable[i][1] = this.buildingYourLegendService.getSkillCost(i + 1);
 						
 		}
 

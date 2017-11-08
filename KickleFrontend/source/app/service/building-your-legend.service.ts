@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 @Injectable()
-export class RulesService {
+export class BuildingYourLegendService {
 	
 	
 	public getRankCostForCircle(rank: number, circle: number): number {	

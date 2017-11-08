@@ -17,10 +17,10 @@ import { KarmaComponent } from './components/karma/karma.component';
 import { AdventureWidgetComponent } from './components/adventure-widget/adventure-widget.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { StepsOverviewComponent } from './components/steps-overview/steps-overview.component';
-import { RulesOverviewComponent } from './components/rules-overview/rules-overview.component';
-import { TalentRankCostTableComponent } from './components/talent-rank-cost-table/talent-rank-cost-table.component';
-import { AttributeRankCostTableComponent } from './components/attribute-rank-cost-table/attribute-rank-cost-table.component';
-import { SkillRankCostTableComponent } from './components/skill-rank-cost-table/skill-rank-cost-table.component';
+import { BuildingYourLegendOverviewComponent } from './components/building-your-legend/building-your-legend-overview/building-your-legend-overview.component';
+import { TalentRankCostTableComponent } from './components/building-your-legend/talent-rank-cost-table/talent-rank-cost-table.component';
+import { AttributeRankCostTableComponent } from './components/building-your-legend/attribute-rank-cost-table/attribute-rank-cost-table.component';
+import { SkillRankCostTableComponent } from './components/building-your-legend/skill-rank-cost-table/skill-rank-cost-table.component';
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -29,7 +29,7 @@ import {TalentService} from './service/talent.service';
 import {AttributeService} from './service/attribute.service';
 import {CharacteristicService} from './service/characteristic.service';
 import {DiceRollService} from './service/dice-roll.service';
-import {RulesService} from './service/rules.service';
+import {BuildingYourLegendService} from './service/building-your-legend.service';
 
 
 @NgModule({
@@ -45,7 +45,7 @@ import {RulesService} from './service/rules.service';
 	AttributeService,
 	CharacteristicService,
 	DiceRollService,
-	RulesService
+	BuildingYourLegendService
   ],
   declarations: [
     TalentListComponent,
@@ -58,7 +58,7 @@ import {RulesService} from './service/rules.service';
 	AdventureWidgetComponent,
 	SkillListComponent,
 	StepsOverviewComponent,
-	RulesOverviewComponent,
+	BuildingYourLegendOverviewComponent,
 	TalentRankCostTableComponent,
 	AttributeRankCostTableComponent,
 	SkillRankCostTableComponent
@@ -71,7 +71,7 @@ import {RulesService} from './service/rules.service';
 	AdventureWidgetComponent,
 	SkillListComponent,
 	StepsOverviewComponent,
-	RulesOverviewComponent
+	BuildingYourLegendOverviewComponent
   ]
 })
 
