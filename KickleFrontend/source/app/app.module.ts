@@ -62,7 +62,11 @@ kickleApp.directive(
     downgradeComponent({ component: BuildingYourLegendOverviewComponent }) as angular.IDirectiveFactory
 );
 
-
+import { AttributeListComponent } from './components/attribute-list/attribute-list.component';
+kickleApp.directive(
+    'attributeList',
+    downgradeComponent({ component: AttributeListComponent }) as angular.IDirectiveFactory
+);  
 
 
 //downgraded services:
@@ -82,8 +86,6 @@ kickleApp
   
 
 require("./components/adventureLog/adventureLog.ts")(kickleApp);
-require("./components/attribute/attribute.ts")(kickleApp);
-require("./components/attribute-list/attribute-list.ts")(kickleApp);
 require("./components/characterOverview/characterOverview.ts")(kickleApp);
 require("./components/characterDescription/characterDescription.ts")(kickleApp);
 
