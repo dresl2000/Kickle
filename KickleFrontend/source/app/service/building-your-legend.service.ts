@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { CircleAdvancement } from '../shared/circleAdvancement'
 
 @Injectable()
 export class BuildingYourLegendService {
@@ -41,6 +41,39 @@ export class BuildingYourLegendService {
 	
 		return this.getCost(rank - 1) + this.getCost(rank - 2);		
 	}
+	
+	public getCircleAdvancement(nextCircle: number) : CircleAdvancement{
+		
+		if(nextCircle < 2 || nextCircle > 15){
+			throw new Error("Error: Invalid Circle");
+		}
+		
+		let minNumberOfTalents: number  = nextCircle + 3;
+		let minRank: number;
+		let oneTalentFromPrevRank: number = nextCircle - 1;
+		
+		switch(true){
+				case (nextCircle <= 11):
+					minRank = nextCircle;	
+					break;
+				case (nextCircle == 12):
+					minRank = 11;
+					break;
+				case (nextCircle == 13):
+					minRank = 12;
+					break;
+				case (nextCircle == 14):
+					minRank = 12;					
+					break;
+				case (nextCircle == 15):
+					minRank = 13;			
+					break;
+		}
+				
+		return new CircleAdvancement(nextCircle,minNumberOfTalents, minRank, oneTalentFromPrevRank);
+		
+	}
+	
 	
 	
 }

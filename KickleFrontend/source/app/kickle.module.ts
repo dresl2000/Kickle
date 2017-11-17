@@ -21,6 +21,8 @@ import { BuildingYourLegendOverviewComponent } from './components/building-your-
 import { TalentRankCostTableComponent } from './components/building-your-legend/talent-rank-cost-table/talent-rank-cost-table.component';
 import { AttributeRankCostTableComponent } from './components/building-your-legend/attribute-rank-cost-table/attribute-rank-cost-table.component';
 import { SkillRankCostTableComponent } from './components/building-your-legend/skill-rank-cost-table/skill-rank-cost-table.component';
+import { CircleAdvancementTableComponent } from './components/building-your-legend/circle-advancement-table/circle-advancement-table.component';
+
 
 //Services
 import {CharacterDataService} from './service/character-data.service';
@@ -61,7 +63,8 @@ import {BuildingYourLegendService} from './service/building-your-legend.service'
 	BuildingYourLegendOverviewComponent,
 	TalentRankCostTableComponent,
 	AttributeRankCostTableComponent,
-	SkillRankCostTableComponent
+	SkillRankCostTableComponent,
+	CircleAdvancementTableComponent
   ],
   entryComponents: [
 	SpellsComponent,

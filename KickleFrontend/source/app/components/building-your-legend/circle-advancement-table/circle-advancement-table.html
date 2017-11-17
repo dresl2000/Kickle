@@ -1,0 +1,11 @@
+<span class="s3 cl">Neuer<br/> Kreis</span>
+<span class="s3">Minimale<br/>Talentanzahl</span>
+<span class="s3">Minimaler<br/>Rank</span>
+<span class="s3">Ein Talent<br/>aus Kreis #</span>
+
+<span *ngFor="let ca of advancementTable">
+	<span class="s3 cl">{{ca.NextCircle}}</span>
+	<span class="s3">{{ca.MinNumberOfTalents}}</span>
+	<span class="s3">{{ca.MinRank}}</span>
+	<span class="s3">{{ca.OneTalentFromPrevRank}}</span>
+</span>
