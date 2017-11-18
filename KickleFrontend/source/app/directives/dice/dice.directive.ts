@@ -13,11 +13,22 @@ export class DiceDirective {
 	@Input('step') step: number;
 	@Input('name') name: string;
 		
-	constructor(private el: ElementRef, private stepsService: StepsService, private diceRollService : DiceRollService ) { 		
+	constructor(private el: ElementRef, private stepsService: StepsService, private diceRollService : DiceRollService ) { 
 	}
 	
+	ngOnInit(){
+
+		if(isNaN(this.step))
+		{
+			return;
+		}
+
+		this.highlight('#990000');
+	
+	}
+
 	@HostListener('click') onClick() {
-		this.highlight('yellow');
+		this.highlight('#0d3982');
 		
 		if(isNaN(this.step))
 		{
@@ -28,15 +39,16 @@ export class DiceDirective {
 	}
 
 	@HostListener('mouseenter') onMouseEnter() {
-		this.highlight('#990000');
+		this.highlight('black');
+		this.el.nativeElement.style.cursor = "pointer"; 
 	}
  
 	@HostListener('mouseleave') onMouseLeave() {
-		this.highlight(null);
+		this.highlight('#990000');
 	}
  
 	private highlight(color: string) {
-		this.el.nativeElement.style.backgroundColor  = color;
+		this.el.nativeElement.style.color  = color;
 	}
 	
 }
