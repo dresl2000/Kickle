@@ -68,6 +68,11 @@ kickleApp.directive(
     downgradeComponent({ component: AttributeListComponent }) as angular.IDirectiveFactory
 );  
 
+import { CombatMainComponent } from './components/combat/combat-main/combat-main.component';
+kickleApp.directive(
+    'combatMain',
+    downgradeComponent({ component: CombatMainComponent }) as angular.IDirectiveFactory
+);  
 
 //downgraded services:
 import {CharacterDataService} from './service/character-data.service';
@@ -121,12 +126,18 @@ kickleApp.config(['$stateProvider', function ($stateProvider) {
                 name: 'buildingYourLegendOverview',
                 url: '/building-your-legend',
 				component  : 'buildingYourLegendOverview'
+            },
+            combatMain = {
+                name: 'combatMain',
+                url: '/combat',
+				component  : 'combatMain'
             };
 
         $stateProvider.state(characterOverview);
         $stateProvider.state(steps);
         $stateProvider.state(spells);
         $stateProvider.state(adventureLog);
-		$stateProvider.state(rulesOverview);
+        $stateProvider.state(rulesOverview);
+        $stateProvider.state(combatMain);
 }]);
 
