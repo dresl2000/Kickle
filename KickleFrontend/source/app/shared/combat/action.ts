@@ -1,15 +1,28 @@
 export class Action {
 
-	constructor(id: number,name: string, baseAction: any )
+	constructor(baseAction: any )
 	{
-
+		this.BaseAction = baseAction;
 
 	}
 
-	public readonly Id: number;
-	public readonly Name: string;
-	public readonly BaseAction : any;
+	public get Id(): string{
+		return this.BaseAction.constructor.name + '-' + this.BaseAction.Id;		
+	}
+
+	public get Name(): string {
+		return this.BaseAction.Name;
+	}
+
+	public get Step() : number{
+		return this.BaseAction.TotalStep;
+	}
+
+	public get Dice() : string {
+		return this.BaseAction.Dice;
+	}
 
 
+	private BaseAction : any;
 
 }

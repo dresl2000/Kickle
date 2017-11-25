@@ -20,22 +20,16 @@
     <div class="s8med12 section">								
 			<div class="header">Kampf</div>								
 			
-			<span>Initiative: </span>
-
 			<span><button (click)="beginCombat($event)">Kampf beginnen</button></span><br/>
 
+			<span>Initiative: </span>
+			
 			<select >
 				<option *ngFor="let iniAction of IniActionList" value= {{iniAction.Id}}>
 				   {{iniAction.Name}}
 				</option>
 			  </select>
 
-
-			<span *ngFor="let g of IniActionList">
-				{{g.name}}
-				{{g.Name}}
-
-			</span>
 
 			<span>Runde: 2</span><br/>
 			

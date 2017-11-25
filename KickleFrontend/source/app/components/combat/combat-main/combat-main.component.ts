@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { Action } from '../../../shared/combat/action'
-
-
-import {AttributeService} from '../../../service/attribute.service';
 import {StepsService} from '../../../service/steps.service';
-import {Attribute} from '../../../shared/attribute';
-import {DiceDirective} from '../../../directives/dice/dice.directive';
+import { SimpleAction } from '../../../shared/combat/simpleAction';
 
 
 @Component({
@@ -16,18 +12,20 @@ export class CombatMainComponent {
 
 	IniActionList : Action[] = [];
 
-	constructor(private attributeService: AttributeService, private stepsService: StepsService) { }
+	constructor(private stepsService: StepsService) { }
 	
 	ngOnInit(){
 		console.log('initialzing combat...');
 
-		this.IniActionList.push(new Action(1,"Geschicklichkeit",null));
-		this.IniActionList.push(new Action(2,"Lufttanz",null));
-		this.IniActionList.push(new Action(3,"Lufttanz + Tigersprung",null));
+		var sa1 = new SimpleAction(1,"Geschicklichkeit",6,"w10");
+		var sa2 = new SimpleAction(1,"Lufttanz",14,"w20 w4");
+		var sa3 = new SimpleAction(1,"Lufttanz + Tigersprung",18,"w20 w10");
 
-		
-		debugger;
-		console.log( this.IniActionList.filter(x => x.Id == 1)[0].Name);
+		this.IniActionList.push(new Action(sa1));
+		this.IniActionList.push(new Action(sa2));
+		this.IniActionList.push(new Action(sa3));
+	
+		//console.log( this.IniActionList.filter(x => x.Id == 1)[0].Name);
 
 
 	}
