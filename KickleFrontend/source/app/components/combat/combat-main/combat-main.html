@@ -24,12 +24,15 @@
 
 			<span>Initiative: </span>
 			
-			<select >
-				<option *ngFor="let iniAction of IniActionList" value= {{iniAction.Id}}>
+			<select [(ngModel)]="selectedIniAction"  >
+				<option *ngFor="let iniAction of IniActionList" [ngValue]="iniAction">
 				   {{iniAction.Name}}
 				</option>
 			  </select>
+			<span>Modifikator</span>
+			<button (click)="rollIni()">Würfeln</button>
 
+			<br/>
 
 			<span>Runde: 2</span><br/>
 			

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { UpgradeModule } from '@angular/upgrade/static';
+import { FormsModule } from '@angular/forms';
 
 //import {RouterModule,Routes} from '@angular/router';
 
@@ -41,7 +42,8 @@ import {BuildingYourLegendService} from './service/building-your-legend.service'
 @NgModule({
   imports: [
     BrowserModule,
-    UpgradeModule//,
+		UpgradeModule,
+		FormsModule//,
 	//RouterModule.forRoot(kickleRoutes)
   ],
   providers: [

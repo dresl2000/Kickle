@@ -11,6 +11,7 @@ import { SimpleAction } from '../../../shared/combat/simpleAction';
 export class CombatMainComponent { 
 
 	IniActionList : Action[] = [];
+	selectedIniAction : Action;
 
 	constructor(private stepsService: StepsService) { }
 	
@@ -35,5 +36,8 @@ export class CombatMainComponent {
 		console.log(event);
 	}
 
+	rollIni(){
+		console.log('rollin Ini: ' +  this.selectedIniAction.Name);
+	}
 
 }

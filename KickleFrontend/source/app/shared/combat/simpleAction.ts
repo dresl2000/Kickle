@@ -1,4 +1,4 @@
-export class SimpleAction {
+export class SimpleAction implements BaseAction {
     
     
         constructor(id : number, name: string, step: number, dice: string){

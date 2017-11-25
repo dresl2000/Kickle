@@ -1,4 +1,4 @@
-export class Talent {
+export class Talent implements BaseAction {
 
 
 	constructor(id : number, name: string, rank: number, circle: number, attribute?: string,  attributeStep?: number, dice?: string){

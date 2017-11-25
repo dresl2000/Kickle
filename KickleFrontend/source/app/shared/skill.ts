@@ -1,4 +1,4 @@
-export class Skill {
+export class Skill implements BaseAction {
 
 
 	constructor(id : number, name: string, rank: number, initialValue: number, attribute: string,  attributeStep: number, dice: string){

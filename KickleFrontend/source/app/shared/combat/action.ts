@@ -1,6 +1,6 @@
 export class Action {
 
-	constructor(baseAction: any )
+	constructor(baseAction: BaseAction )
 	{
 		this.BaseAction = baseAction;
 
@@ -23,6 +23,6 @@ export class Action {
 	}
 
 
-	private BaseAction : any;
+	private BaseAction : BaseAction;
 
 }
