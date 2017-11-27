@@ -18,30 +18,55 @@
 	
 	
     <div class="s8med12 section">								
-			<div class="header">Kampf</div>								
-			
-			<span><button (click)="beginCombat($event)">Kampf beginnen</button></span><br/>
-
-			<span>Initiative: </span>
-			
-			<select [(ngModel)]="selectedIniAction"  >
-				<option *ngFor="let iniAction of IniActionList" [ngValue]="iniAction">
-				   {{iniAction.Name}}
-				</option>
-			  </select>
-			<span>Modifikator</span>
-			<button (click)="rollIni()">Würfeln</button>
-
-			<br/>
-
-			<span>Runde: 2</span><br/>
-			
-			<span>Initiative: 9</span>
-			<span>Gewürfelt: 5 (Lufttanz) + 3 (Tigersprung) + 1 (magische Stiefel) <a href="modifyRolledIni">+</a></span><br/>
+			<div class="header">Kampf</div>		
 						
+			<div class="s7sm12 container">
+				<span>Schaden <input [(ngModel)]="damageInput" style="width: 40px;" /></span><button (click)="takeDamage()">+</button><button (click)="reduceDamage()">-</button><br/>
+				<span>Initiative: </span>
+				
+				<select [(ngModel)]="selectedIniAction"  >
+					<option *ngFor="let iniAction of IniActionList" [ngValue]="iniAction">
+					   {{iniAction.Name}}
+					</option>
+				  </select>
+				<span>Modifikator</span>
+				<button (click)="rollIni()">Würfeln</button>
+	
+				<br/>
+	
+										
+				<span>Gewürfelt: 5 (Lufttanz) + 3 (Tigersprung) + 1 (magische Stiefel) <a href="modifyRolledIni">+</a></span><br/>
 
-			<span>Angriff: </span>
-			<span>Schaden: </span>
+			</div>
+
+			<div class="s5sm12 container">								
+				<div class="s4">
+					<div class="numberCircleHeader">Aktuell</div>
+					<div class="numberCircle">{{damage}}</div>
+				</div>
+				<div class="s4">
+					<div class="numberCircleHeader">Wunden</div>
+					<div class="numberCircle">1</div>
+				</div>
+				<div class="s4">
+					<div class="numberCircleHeader">Blutmagie</div>
+					<div class="numberCircle">0</div>
+				</div>			
+			</div>
+			
+			<div class="s12">
+				<span><button (click)="beginCombat($event)">Kampf beginnen</button></span><br/>
+				<span>Runde: 2</span><br/>
+	
+	
+							
+	
+				<span>Angriff: </span><br/>
+				<span>Schaden: </span>
+
+			</div>
+
+
 
 			
 

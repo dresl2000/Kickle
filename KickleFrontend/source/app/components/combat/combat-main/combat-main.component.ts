@@ -13,6 +13,9 @@ export class CombatMainComponent {
 	IniActionList : Action[] = [];
 	selectedIniAction : Action;
 
+	damage : number;
+	damageInput : number;
+
 	constructor(private stepsService: StepsService) { }
 	
 	ngOnInit(){
@@ -26,6 +29,8 @@ export class CombatMainComponent {
 		this.IniActionList.push(new Action(sa2));
 		this.IniActionList.push(new Action(sa3));
 	
+		this.damage = 11;
+
 		//console.log( this.IniActionList.filter(x => x.Id == 1)[0].Name);
 
 
@@ -40,4 +45,25 @@ export class CombatMainComponent {
 		console.log('rollin Ini: ' +  this.selectedIniAction.Name);
 	}
 
+	takeDamage(){
+		console.log('taking dmg:' + this.damageInput);
+
+		if(isNaN(this.damageInput))
+		{
+			this.damageInput = null;
+			return;
+		}
+
+		let currentDamage : number = parseInt(this.damage.toString().trim());		
+		let modifier : number = parseInt(this.damageInput.toString().trim());		
+
+		this.damageInput = null;
+
+		this.damage = currentDamage + modifier;
+		
+	}
+
+	reduceDamage(){
+		this.damage -= this.damageInput;
+	}
 }
