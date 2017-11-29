@@ -46,7 +46,14 @@ export class CombatMainComponent {
 	}
 
 	takeDamage(){
-		console.log('taking dmg:' + this.damageInput);
+		this.modifyDamage(function(a,b){return a + b;});
+	}
+
+	reduceDamage(){
+		this.modifyDamage(function(a,b){return a - b;});
+	}
+
+	modifyDamage(calc){
 
 		if(isNaN(this.damageInput))
 		{
@@ -55,15 +62,11 @@ export class CombatMainComponent {
 		}
 
 		let currentDamage : number = parseInt(this.damage.toString().trim());		
-		let modifier : number = parseInt(this.damageInput.toString().trim());		
+		let input : number = parseInt(this.damageInput.toString().trim());		
 
 		this.damageInput = null;
 
-		this.damage = currentDamage + modifier;
-		
+		this.damage = calc(currentDamage, input);
 	}
 
-	reduceDamage(){
-		this.damage -= this.damageInput;
-	}
 }
