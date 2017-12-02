@@ -31,12 +31,7 @@
 				  </select>
 				<span>Modifikator</span>
 				<button (click)="rollIni()">Würfeln</button>
-	
-				<br/>
-	
-										
-				<span>Gewürfelt: 5 (Lufttanz) + 3 (Tigersprung) + 1 (magische Stiefel) <a href="modifyRolledIni">+</a></span><br/>
-
+																
 			</div>
 
 			<div class="s5sm12 container">								
@@ -54,16 +49,13 @@
 				</div>			
 			</div>
 			
-			<div class="s12">
-				<span><button (click)="beginCombat($event)">Kampf beginnen</button></span><br/>
-				<span>Runde: 2</span><br/>
-	
-	
-							
-	
+			<div *ngIf="combat.isActive" class="s12">
+				<span>Runde: {{combat.Round}}</span><br/>
+				<span>Ini: 5 (Lufttanz) + 3 (Tigersprung) + 1 (magische Stiefel) </span><br/>
+													
 				<span>Angriff: </span><br/>
 				<span>Schaden: </span>
-
+				<span><button (click)="endCombat()">Kampf Ende</button></span><br/>
 			</div>
 
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Action } from '../../../shared/combat/action'
 import {StepsService} from '../../../service/steps.service';
 import { SimpleAction } from '../../../shared/combat/simpleAction';
+import { Combat } from '../../../shared/combat/combat';
 
 
 @Component({
@@ -14,12 +15,15 @@ export class CombatMainComponent {
 	selectedIniAction : Action;
 
 	damage : number;
-	damageInput : number;
+	damageInput : number;	
+	combat : Combat;
 
 	constructor(private stepsService: StepsService) { }
 	
 	ngOnInit(){
 		console.log('initialzing combat...');
+
+		this.combat = new Combat();
 
 		var sa1 = new SimpleAction(1,"Geschicklichkeit",6,"w10");
 		var sa2 = new SimpleAction(1,"Lufttanz",14,"w20 w4");
@@ -28,7 +32,8 @@ export class CombatMainComponent {
 		this.IniActionList.push(new Action(sa1));
 		this.IniActionList.push(new Action(sa2));
 		this.IniActionList.push(new Action(sa3));
-	
+		this.selectedIniAction = this.IniActionList[0];
+
 		this.damage = 11;
 
 		//console.log( this.IniActionList.filter(x => x.Id == 1)[0].Name);
@@ -36,13 +41,28 @@ export class CombatMainComponent {
 
 	}
 
-	beginCombat(event){
-		console.log('Let the battle begin!');
-		console.log(event);
+	beginCombat(){
+		console.log('Combat begins');
+		this.combat = new Combat();
+		
+	}
+
+	endCombat(){
+		console.log('Combat ended!');
+		this.combat.end();
 	}
 
 	rollIni(){
+		if(!this.selectedIniAction){
+			return;
+		}
 		console.log('rollin Ini: ' +  this.selectedIniAction.Name);
+
+		if(this.combat.HasEnded){
+			this.beginCombat();
+		}
+		
+		this.combat.nextRound();
 	}
 
 	takeDamage(){
@@ -55,7 +75,7 @@ export class CombatMainComponent {
 
 	modifyDamage(calc){
 
-		if(isNaN(this.damageInput))
+		if(!this.damageInput || isNaN(this.damageInput))
 		{
 			this.damageInput = null;
 			return;
