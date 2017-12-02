@@ -52,14 +52,14 @@
 			<div *ngIf="combat.isActive" class="s12">
 				<span>Runde: {{combat.Round}}</span><br/>
 				<span *ngIf="IniRoll">Initiative: {{IniRoll.Result}} ({{IniRoll.Dice }}) </span><br/>																	
-				<span>Angriff: </span>
-				<select [(ngModel)]="selectedAttackAction"  >
-					<option *ngFor="let attackAction of AttackActionList" [ngValue]="attackAction">
-					   {{attackAction.Name}}
+				<span>Aktion: </span>
+				<select [(ngModel)]="selectedCombatAction"  >
+					<option *ngFor="let combatAction of CombatActionList" [ngValue]="combatAction">
+					   {{combatAction.Name}}
 					</option>
 				  </select>
 				<span>Modifikator</span>
-				<button (click)="rollAttack()">Würfeln</button>				
+				<button (click)="rollCombatAction()">Würfeln</button>				
 				
 				
 				<br/>

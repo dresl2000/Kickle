@@ -16,9 +16,10 @@ export class CombatMainComponent {
 	selectedIniAction : Action;
 
 	IniRoll : DiceRoll;
+	CombatActionRoll : DiceRoll;
 
-	AttackActionList : Action[] = [];
-	selectedAttackAction : Action;
+	CombatActionList : Action[] = [];
+	selectedCombatAction : Action;
 
 	DamageActionList : Action[] = [];
 	selectedDamageAction : Action;
@@ -43,12 +44,12 @@ export class CombatMainComponent {
 		this.selectedIniAction = this.IniActionList[0];
 
 		var saAttack1 = new SimpleAction(1,"Spruchzauberei",15,"w20 w6");
-		this.AttackActionList.push(new Action(saAttack1));
+		this.CombatActionList.push(new Action(saAttack1));
 
 		var saAttack2 = new SimpleAction(1,"Fadenweben",15,"w20 w6");
-		this.AttackActionList.push(new Action(saAttack2));
+		this.CombatActionList.push(new Action(saAttack2));
 
-		this.selectedAttackAction = this.AttackActionList[0];		
+		this.selectedCombatAction = this.CombatActionList[0];		
 
 		//console.log( this.IniActionList.filter(x => x.Id == 1)[0].Name);
 	}
@@ -87,8 +88,21 @@ export class CombatMainComponent {
 		this.combat.nextRound();
 	}
 
-	rollAttack(){
-		console.log(`rolling attack: ${this.selectedAttackAction.Name}`);		
+	rollCombatAction(){
+
+		if(!this.selectedCombatAction){
+			return;
+		}
+
+		if(isNaN(this.selectedCombatAction.Step))
+		{
+			return;
+		}
+
+		console.log(`rolling combatAction: ${this.selectedCombatAction.Name}`);		
+		this.CombatActionRoll = new DiceRoll(this.selectedCombatAction.Name,this.selectedCombatAction.Step,this.selectedCombatAction.Dice, this.stepsService.rollStep(this.selectedCombatAction.Step), new Date() );
+		
+		this.diceRollService.sendDiceRoll(this.CombatActionRoll);		
 	}
 
 
