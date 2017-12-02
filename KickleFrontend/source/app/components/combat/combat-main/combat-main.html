@@ -11,7 +11,7 @@
         
 		<div class="s12 section" style="min-height:95px">
 			<div class="header">Würfelbrett</div>								
-			<dice-board></dice-board>									
+			<dice-board [displayHistory]="true"></dice-board>									
 		</div>        
 		
 	</div>
@@ -32,7 +32,7 @@
 				<span>Modifikator</span>
 				<button (click)="rollIni()">Würfeln</button>
 																
-			</div>
+			</div> 
 
 			<div class="s5sm12 container">								
 				<div class="s4">
@@ -51,10 +51,19 @@
 			
 			<div *ngIf="combat.isActive" class="s12">
 				<span>Runde: {{combat.Round}}</span><br/>
-				<span>Ini: 5 (Lufttanz) + 3 (Tigersprung) + 1 (magische Stiefel) </span><br/>
-													
-				<span>Angriff: </span><br/>
-				<span>Schaden: </span>
+				<span *ngIf="IniRoll">Initiative: {{IniRoll.Result}} ({{IniRoll.Dice }}) </span><br/>																	
+				<span>Angriff: </span>
+				<select [(ngModel)]="selectedAttackAction"  >
+					<option *ngFor="let attackAction of AttackActionList" [ngValue]="attackAction">
+					   {{attackAction.Name}}
+					</option>
+				  </select>
+				<span>Modifikator</span>
+				<button (click)="rollAttack()">Würfeln</button>				
+				
+				
+				<br/>
+				<span>Schaden: </span><br/>
 				<span><button (click)="endCombat()">Kampf Ende</button></span><br/>
 			</div>
 
