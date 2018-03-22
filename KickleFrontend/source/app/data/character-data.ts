@@ -13,7 +13,7 @@ export const CHARDATA : any = {
 		Age: 36,
 		Karma: {
 			Max: 60,
-			Current: 15,
+			Current: 12,
 			Cost: 5,
 			TotalBought: 0,
 			Step: 6
@@ -143,18 +143,18 @@ export const CHARDATA : any = {
 			},
 			{
 				"Id": 13,
-				"Name": "Totstellen",
-				"Rank": 3,
-				"Attribute" : "CHA",
-				"Circle": 4
-			},
-			{
-				"Id": 14,
 				"Name": "Illusionsverstärkung",
 				"Rank": 3,
 				"Attribute" : "PER",
 				"Circle": 4
-			}
+			}, 
+			{
+				"Id": 14,
+				"Name": "Zaubermatrix",
+				"Rank": 3,
+				"Attribute" : "-",
+				"Circle": 4
+			}			
 			
 			
 		],

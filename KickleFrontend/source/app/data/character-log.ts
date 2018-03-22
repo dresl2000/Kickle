@@ -89,6 +89,25 @@ export const CHARLOG : any = {
 			'Wieder nicht ins Archiv gekommen.'
 			]
 		},			
+		{
+			Id: 8,
+			Date: '03-22-2018',
+			Title: 'Am Gongtor',
+			LegendPoints: 4000 ,
+			BonusLegendPoints:1000 ,
+			Text: 
+			[
+			'Pyke hat Faden in Amulett gewoben, kann nicht wieder geloest werden, 2 tage Rast - gemeinschaftlich beschlossen',
+			'tok tok tok ist im keller und brabbelt sinnloses zeug im keller',
+			'vor dem fruehstueck noch eine stunde ausruhen',
+			'feuerdaemon , wie balrog, von aslani beschworen, kaempft gegen geisterwachen am gongtor. magier schiessen blitze, blau schimmerende wachen, ',
+			'endlich haben wir den beweis, den wir brauchen!',
+			'kadavermensch taucht am gongtor aus,blitz von kickle und fusstritt von toktoktok',
+			'frankenstein riesen troll klettert gong tor hoch, 4,5m hoch, heisst hund und ist aus holz, hat angst vor dem feuer',
+			'angeregt ueber aslani unterhalten',
+			'gasthaus - tagebuch von elf'
+			]
+		}		
 	],
 	Notes: [
 		{
