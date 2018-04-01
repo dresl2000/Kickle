@@ -31,7 +31,37 @@ export class CharacterDataService {
 
 	public getAdventureLog() : any {					
 		return CHARLOG.adventureLog;
-	}			
+	}
+	
+	public getEquipment() : any{
+		return CHARDATA.Characters[0].Equipment;
+	};
+	/*
+	$scope.getTotalLegendPoints = function() {
+		
+		return characterDataService.getCharacterData().Characters[0].LegendPoints.Total;		
+	};
+	
+	$scope.getCurrentLegendPoints = function() {
+		
+		return characterDataService.getCharacterData().Characters[0].LegendPoints.Current;		
+	};	
+	
+	$scope.getLegendStatus = function() {
+		
+		return characterDataService.getCharacterData().Characters[0].LegendPoints.Status;		
+	};	
+*/
+	public getWallet() : any{
+		return CHARDATA.Characters[0].Wallet;
+	};
+	
+	
+	public getLanguages() : any{
+		return CHARDATA.Characters[0].Languages;
+	};	
+	
+
 }
 
 			

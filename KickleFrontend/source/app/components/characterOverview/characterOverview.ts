@@ -7,7 +7,7 @@ kickleApp.controller('characterOverviewController',  function($log,$scope, chara
 	}
 
 	$scope.getEquipment = function(){
-		return characterDataService.getCharacterData().Characters[0].Equipment;
+		return characterDataService.getEquipment();
 	};
 	
 	$scope.getTotalLegendPoints = function() {
@@ -26,12 +26,12 @@ kickleApp.controller('characterOverviewController',  function($log,$scope, chara
 	};	
 
 	$scope.getWallet = function(){
-		return characterDataService.getCharacterData().Characters[0].Wallet;
+		return characterDataService.getWallet();
 	};
 	
 	
 	$scope.getLanguages = function(){
-		return characterDataService.getCharacterData().Characters[0].Languages;
+		return characterDataService.getLanguages();
 	};
 	
 	init();
