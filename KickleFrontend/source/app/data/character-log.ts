@@ -94,25 +94,25 @@ export const CHARLOG : any = {
 			Date: '03-22-2018',
 			Title: 'Am Gongtor',
 			LegendPoints: 4000 ,
-			BonusLegendPoints:1000 ,
+			BonusLegendPoints:1000,
 			Text: 
 			[
 			'Der Kadavermensch war tatsächlich an Pykes Amulett interessiert. Zu allem Übel hat unser menschlicher Freund einen Faden in das Amulett gewoben und kann diesen nicht mehr lösen. ',
-			'Oh diese barsaivischen Narren sind so naiv, sie weben in alles Fäden was nicht davon laufen kann. ',
-			'Gemeinschaftlich beschliessen wir uns zwei wohlverdiente Tage Rast zu gönnen. Ich habe eine grosse, klaffende Wunde am linken Zeigefinger, die ich dringend auskurieren muss. ',
-			'Es schmerzt ganz schrecklich, wenn ich versuche auf Dinge zu zeigen. Jede halbe Stunde nehme ich meinen ganzen Mut zusammen und zeige an die Decke. Bei Vestrival! Nach nur einem Tag hat der Schmerz etwas nachgelassen. ',
+			'Oh diese barsaivischen Narren sind so naiv, sie weben in alles Fäden was nicht bei drei auf den Bäumen ist. ',
+			'Gemeinschaftlich beschliessen wir uns zwei wohlverdiente Tage Rast zu gönnen. Ich habe eine klaffende Wunde am linken Zeigefinger, die ich dringend auskurieren muss. ',
+			'Es schmerzt ganz schrecklich, wenn ich versuche auf Dinge zu zeigen. Jede halbe Stunde nehme ich meinen ganzen Mut zusammen und zeige bestimmend an die Decke. Bei Vestrival! Nach nur einem Tag hat der Schmerz etwas nachgelassen. ',
 			'Ich höre Tok Tok Tok seltsame Worte rufen. Es scheinen barsaivische Worte zu sein, ich kenne sie nicht. Womöglich ruft er seine Vorfahren an. ',
 			'Nach dem Frühstück am morgen des dritten Tages verspüre ich noch ein seltsames Kribbel im Finger. Zur Sicherheit beschliesse ich mich noch eine weitere Stunde auszuruhen. ',			
 			'Wir setzen unseren Weg durch die brennende Stadt fort. Wir halten uns nasse Tücher vor Mund und Nase und ich wirke Wetterfest auf mich und meine barsaivischen Begleiter. ',
 			'Nach 300 Schritten brennt es ganz schrecklich in meiner Lunge. Es wäre vernünftig jetzt anzuhalten und die Lunge auskurieren. Ich schiebe den Gedanken beiseite und beisse tapfer die Zähne zusammen. ',
 			'Wir erreichen das Gongtor. Eine blau leuchtende, geisterhafte Szenarie spielt sich vor uns ab. Vermutlich eine astrale Reflektion aus der Vergangenheit. Es ist als würde uns die Stadt selbst Beweise für Aslanis schändliches Treiben liefern wollen. ',
-			'Wir sehen einen grässlichen Feuerdämon, den Aslani aus den dämonischen Tiefen des Asltralraums beschworen hat. Er greift die Stadt an und eine wackere Heldengruppe stellt sich dem Ungetüm in den Weg. Magier schiessen Blitze auf den Dämon. ',
-			'Während wir den Kampf in der Vergangenheit beobachten öffnet Tok Tok Tok gedankenverloren eine Tür zu einem nahegelegen Haus. Dahinter steht ein Kadavermensch! Geistesgegenwärtig schiesse ich eine Blitz auf das Monster. Der Troll gibt ihm den Rest und zertritt seinen Kopf. ',			
-			'Ein furcheinflössendes Monster klettert über das Gongtor. Es ist ein Troll, nur noch viel größer und noch hässlicher als Tok Tok Tok. Er scheint zusammengeflickt aus verschiedenen Teilen von Namensgebersn. Das Monster scheint es auf Pykes Amulett abgesehen zu haben. ',
+			'Wir sehen einen grässlichen Feuerdämon, den Aslani aus den dämonischen Tiefen des Asltralraums beschworen hat. Endlich ist diese Konkurbine der Dämonen überführt. Der Feuerdämon greift die Stadt an und eine wackere Heldengruppe stellt sich dem Ungetüm in den Weg. Magier schiessen Blitze auf den Dämon. ',
+			'Während wir den Kampf in der Vergangenheit beobachten öffnet Tok Tok Tok gedankenverloren eine Tür zu einem nahegelegen Haus. Dahinter steht ein Kadavermensch! Geistesgegenwärtig schiesse ich eine Blitz auf das Monster. Es wird in eine Ecke geschleudert und der Troll gibt ihm den Rest und zertritt seinen Kopf. ',			
+			'Ein furcheinflössendes Monster klettert über das Gongtor. Es ist ein Troll, nur noch viel größer und noch hässlicher als Tok Tok Tok. Er scheint zusammengeflickt aus verschiedenen Teilen von Namensgebern. Das Monster scheint es auf Pykes Amulett abgesehen zu haben. ',
 			'Tok Tok Tok fängt an Flöte zu spielen und das Monster erscheint jetzt plötzlich freundlich. Er stellt sich als Hund vor und behauptet aus Holz zu sein. Er hat Angst vor dem Feuer ',
 			'Hund hat einen nur sehr begrenzten Horizont. Ich warne ihn vor Aslani, aber er scheint das alles nicht zu begreifen. Er erinnert mich an unser Elfenmädchen Lili. Sie war fröhlich und hat immer für uns gesungen. Nachdem sie Milch verschüttet hatte brachte sie mein Brunder für einen halben Tag zum Foltermeister. Er sollte sie mit seinen Instrumenten erschrecken. ',
 			'Leider hat mein Bruder vergessen sie dort abzuholen. Uns ist erst nach 6 Monaten aufgefallen, dass Lili immer noch im Kerker war. Danach war sie einfach nicht mehr die alte. Sie hat nie wieder gesungen und war genauso wie Hund. ',
-			'Wir erreichen ein Gasthaus ein. Wieder nicht ins Archiv gekommen. '
+			'Wir kehren in ein Gasthaus ein. Wieder nicht ins Archiv gekommen. '
 			]
 		}		
 	],
