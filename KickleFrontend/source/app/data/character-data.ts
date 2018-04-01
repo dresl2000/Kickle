@@ -20,7 +20,7 @@ export const CHARDATA : any = {
 		},
 		LegendPoints : {
 			Current : 200,
-			Total: 19700,
+			Total: 24700,
 			Status: "I"
 		},		
 		Attributes: [
@@ -46,8 +46,8 @@ export const CHARDATA : any = {
 			},
 			{
 				"Type":"WIL",
-				"Value": 16,
-				"Increased": 0
+				"Value": 17,
+				"Increased": 1
 			},
 			{
 				"Type":"CHA",
@@ -115,7 +115,7 @@ export const CHARDATA : any = {
 			{
 				"Id": 9,
 				"Name": "Unempfindlichkeit (4/3)",
-				"Rank": 4,
+				"Rank": 6,
 				"Attribute" : "-",
 				"Circle": 2,
 				"IsDurability": true
@@ -137,14 +137,14 @@ export const CHARDATA : any = {
 			{
 				"Id": 12,
 				"Name": "Totstellen",
-				"Rank": 4,
+				"Rank": 5,
 				"Attribute" : "CHA",
 				"Circle": 3
 			},
 			{
 				"Id": 13,
 				"Name": "Illusionsverstärkung",
-				"Rank": 3,
+				"Rank": 5,
 				"Attribute" : "PER",
 				"Circle": 4
 			}, 
