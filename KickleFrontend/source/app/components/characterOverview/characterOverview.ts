@@ -12,17 +12,17 @@ kickleApp.controller('characterOverviewController',  function($log,$scope, chara
 	
 	$scope.getTotalLegendPoints = function() {
 		
-		return characterDataService.getCharacterData().Characters[0].LegendPoints.Total;		
+		return characterDataService.getLegendPoints().total;		
 	};
 	
 	$scope.getCurrentLegendPoints = function() {
 		
-		return characterDataService.getCharacterData().Characters[0].LegendPoints.Current;		
+		return characterDataService.getLegendPoints().current;		
 	};	
 	
 	$scope.getLegendStatus = function() {
 		
-		return characterDataService.getCharacterData().Characters[0].LegendPoints.Status;		
+		return characterDataService.getLegendPoints().status;		
 	};	
 
 	$scope.getWallet = function(){

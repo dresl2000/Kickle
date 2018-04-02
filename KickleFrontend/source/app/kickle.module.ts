@@ -37,6 +37,7 @@ import {AttributeService} from './service/attribute.service';
 import {CharacteristicService} from './service/characteristic.service';
 import {DiceRollService} from './service/dice-roll.service';
 import {BuildingYourLegendService} from './service/building-your-legend.service';
+import {LegendPointService} from './service/legend-point.service';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import {BuildingYourLegendService} from './service/building-your-legend.service'
 	AttributeService,
 	CharacteristicService,
 	DiceRollService,
-	BuildingYourLegendService
+	BuildingYourLegendService,
+	LegendPointService
   ],
   declarations: [
     TalentListComponent,
