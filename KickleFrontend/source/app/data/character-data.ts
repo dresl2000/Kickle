@@ -19,9 +19,7 @@ export const CHARDATA : any = {
 			Step: 6
 		},
 		LegendPoints : {
-			Current : 200,
-			Total: 24700,
-			Status: "I"
+			Current : 200
 		},		
 		Attributes: [
 			{

@@ -11,7 +11,7 @@ export class LegendPointService {
         }, 0);
         
 
-        let current : number = 200;
+        let current : number = character.LegendPoints.Current;
         
 
         return new LegendPoints(current, total, this.getLegendStatus(total));
