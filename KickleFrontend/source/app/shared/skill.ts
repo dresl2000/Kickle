@@ -1,3 +1,5 @@
+import {BaseAction} from './combat/baseAction';
+
 export class Skill implements BaseAction {
 
 

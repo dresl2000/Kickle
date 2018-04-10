@@ -1,4 +1,4 @@
-interface BaseAction{
+export interface BaseAction{
 
     readonly Id: number;
     readonly Name: string;

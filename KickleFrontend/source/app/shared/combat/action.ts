@@ -1,3 +1,5 @@
+import {BaseAction} from './baseAction';
+
 export class Action {
 
 	constructor(baseAction: BaseAction )
